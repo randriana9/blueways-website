@@ -6,23 +6,23 @@ var bs = require('browser-sync').create();
 
     gulp.task('sass', function() {
         return gulp.src('./src/sass/*.scss')
-        .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./public/stylesheets'));
+            .pipe(sourcemaps.init())
+            .pipe(sass().on('error', sass.logError))
+            .pipe(sourcemaps.write('.'))
+            .pipe(gulp.dest('./public/stylesheets'))
+            .pipe(bs.stream());
     })
 
-    gulp.task('browser-sync', function() {
+    gulp.task('serve', ['sass'],function() {
+
         bs.init({
             proxy: "http://localhost:3000"
-        })
+        });
+
+        gulp.watch('./src/sass/*.*', ['sass']);
+        gulp.watch('./views/**/*.html').on('change', bs.reload);
     })
 
-    gulp.task('reload', function() {
-        bs.reload();
-    })
+    gulp.task('default', ['serve'],function() {
 
-    gulp.task('default', ['browser-sync'],function() {
-        gulp.watch('./src/sass/*.scss', ['sass', 'reload']);
-        gulp.watch('./views/**/*.html', ['reload']);
     })
