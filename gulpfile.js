@@ -40,4 +40,12 @@ var bs = require('browser-sync').create();
          /* copy bootstrap stylesheets */
         gulp.src(['node_modules/bootstrap-sass/assets/stylesheets/**'])
         .pipe(gulp.dest('public/stylesheets/bootstrap'));
+
+        /* copy fullpage.js stylesheets */
+        gulp.src(['node_modules/fullpage.js/dist/jquery.fullpage.min.css', 'node_modules/fullpage.js/dist/jquery.fullpage.css'])
+        .pipe(gulp.dest('public/stylesheets/fullpage'));
+
+        /* copy fullpage.js javascripts */
+        gulp.src(['node_modules/fullpage.js/dist/jquery.fullpage.min.js', 'node_modules/fullpage.js/dist/jquery.fullpage.js'])
+        .pipe(gulp.dest('public/javascripts/fullpage.js'));
     })
