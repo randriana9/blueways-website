@@ -8,14 +8,64 @@
     <title>Blueways</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/fullpage.js/jquery.fullpage.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
-    <h1>heisann</h1>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img class="brand-logo" src="images/logo.png" alt="BLUEWAYS-LOGO">
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#home">HJEM</a></li>
+            <li><a href="#about">OM OSS</a></li>
+            <li><a href="#projects">VÅRE PROSJEKTER</a></li>
+            <li><a href="#contact">KONTAKT</a></li>
+            <li><a href="#news">NYHETER</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#support">GI STØTTE</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
     <div id="fullpage">
-      <div class="section">some section</div>
-      <div class="section">some section</div>
-      <div class="section">some section</div>
-      <div class="section">some section</div>
+      <div id="hero-section" class="section">
+        <span>SAMMEN GJØR VI EN FORSKJELL</span>
+      </div>
+      <div id="second-section" class="section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 second-section-content section-B">
+              <a href="#projects">
+                <img src="images/school-image.jpeg" alt="">
+                <div class="image-overlay">Blueways vil gjennom flere prosjekter bidra til å bekjempe fattigdom på Madagaskar.</div>
+              </a>
+            </div>
+            <div class="col-md-6 second-section-content section-A">
+              <a href="#projects">
+                <img src="images/children.jpg" alt="">
+                <div class="image-overlay">
+                  <img class="like-icon" src="images/like.png" alt="">
+                  INGEN KAN GJØRE ALT, MEN ALLE KAN GJØRE LITT!
+                </div>
+              </a>  
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" style="background-color: green;">some section</div>
+      <div class="section" style="background-color: yellow;">some section</div>
     </div>
 
     <script type="text/javascript" src="javascripts/jquery/jquery.min.js"></script>

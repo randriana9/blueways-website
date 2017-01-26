@@ -1,1 +1,95 @@
 /* put custom sass here */
+
+body {
+    font-family: $main-font-family;
+}
+
+.navbar {
+    z-index: $zindex-navbar;
+}
+
+.brand-logo {
+    height: 150%;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+#hero-section {
+    background: url("../images/hero-image-2.jpg") no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 4.5vw;
+    color: #FFF;
+
+    span {
+        position: absolute;
+        top: 350px;
+        left: 250px;
+    }
+}
+
+#second-section {
+    
+    .second-section-content {
+        height: 100vh;
+    }
+
+    .section-A {
+        padding: 0;
+
+        .image-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            background-color: $primary-color-darker-transparent;
+            @include transition(background-color, 0.8s);
+
+            text-align: center;
+            font-size: 2.5em;
+            color: #fff;
+            padding: 260px 50px;
+
+            .like-icon {
+                height: 130px;
+                display: block;
+                margin: 30px auto;
+            }
+
+        }
+
+        .image-overlay:hover {
+            background-color: $primary-color-darker;
+        }
+    }
+
+    .section-B {
+        background-color: $tertiary-color;
+        position: relative;
+        padding: 0;
+
+        .image-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            background-color: $secondary-color-darker-transparent;
+            @include transition(background-color, 0.8s);
+
+            text-align: center;
+            font-size: 2.6em;
+            color: #fff;
+            padding: 50vh 30px;
+        }
+
+        .image-overlay:hover {
+            background-color: $secondary-color-darker;
+        }
+    }
+}
+
+
+
+
