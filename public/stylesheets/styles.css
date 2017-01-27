@@ -3654,7 +3654,7 @@ tbody.collapse.in {
 
 .navbar {
   position: relative;
-  min-height: 70px;
+  min-height: 50px;
   margin-bottom: 0;
   border: 1px solid transparent; }
   .navbar:before, .navbar:after {
@@ -3760,10 +3760,10 @@ tbody.collapse.in {
 
 .navbar-brand {
   float: left;
-  padding: 25px 15px;
+  padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
-  height: 70px; }
+  height: 50px; }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
   .navbar-brand > img {
@@ -3778,8 +3778,8 @@ tbody.collapse.in {
   float: right;
   margin-right: 15px;
   padding: 9px 10px;
-  margin-top: 18px;
-  margin-bottom: 18px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
@@ -3798,7 +3798,7 @@ tbody.collapse.in {
       display: none; } }
 
 .navbar-nav {
-  margin: 12.5px -15px; }
+  margin: 7.5px -15px; }
   .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -3826,8 +3826,8 @@ tbody.collapse.in {
       .navbar-nav > li {
         float: left; }
         .navbar-nav > li > a {
-          padding-top: 25px;
-          padding-bottom: 25px; } }
+          padding-top: 15px;
+          padding-bottom: 15px; } }
 
 .navbar-form {
   margin-left: -15px;
@@ -3837,8 +3837,8 @@ tbody.collapse.in {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 18px;
-  margin-bottom: 18px; }
+  margin-top: 8px;
+  margin-bottom: 8px; }
   @media (min-width: 768px) {
     .navbar-form .form-group {
       display: inline-block;
@@ -3906,18 +3906,18 @@ tbody.collapse.in {
   border-bottom-left-radius: 0; }
 
 .navbar-btn {
-  margin-top: 18px;
-  margin-bottom: 18px; }
+  margin-top: 8px;
+  margin-bottom: 8px; }
   .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
-    margin-top: 20px;
-    margin-bottom: 20px; }
+    margin-top: 10px;
+    margin-bottom: 10px; }
   .navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn {
-    margin-top: 24px;
-    margin-bottom: 24px; }
+    margin-top: 14px;
+    margin-bottom: 14px; }
 
 .navbar-text {
-  margin-top: 25px;
-  margin-bottom: 25px; }
+  margin-top: 15px;
+  margin-bottom: 15px; }
   @media (min-width: 768px) {
     .navbar-text {
       float: left;
@@ -3934,23 +3934,23 @@ tbody.collapse.in {
       margin-right: 0; } }
 
 .navbar-default {
-  background-color: #FFF;
-  border-color: #eeeeee; }
+  background-color: rgba(250, 250, 250, 0);
+  border-color: rgba(233, 233, 233, 0); }
   .navbar-default .navbar-brand {
-    color: #777; }
+    color: #fff; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-      color: #5e5e5e;
+      color: #e6e6e6;
       background-color: transparent; }
   .navbar-default .navbar-text {
     color: #777; }
   .navbar-default .navbar-nav > li > a {
-    color: #777; }
+    color: #fff; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: #333;
       background-color: transparent; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #555;
-    background-color: #eeeeee; }
+    background-color: rgba(233, 233, 233, 0); }
   .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
     color: #ccc;
     background-color: transparent; }
@@ -3962,28 +3962,28 @@ tbody.collapse.in {
       background-color: #888; }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
-    border-color: #eeeeee; }
+    border-color: rgba(233, 233, 233, 0); }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    background-color: #eeeeee;
+    background-color: rgba(233, 233, 233, 0);
     color: #555; }
   @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-      color: #777; }
+      color: #fff; }
       .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #333;
         background-color: transparent; }
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
       color: #555;
-      background-color: #eeeeee; }
+      background-color: rgba(233, 233, 233, 0); }
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
       color: #ccc;
       background-color: transparent; } }
   .navbar-default .navbar-link {
-    color: #777; }
+    color: #fff; }
     .navbar-default .navbar-link:hover {
       color: #333; }
   .navbar-default .btn-link {
-    color: #777; }
+    color: #fff; }
     .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
       color: #333; }
     .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus,
@@ -8148,14 +8148,67 @@ button.close {
 body {
   font-family: "Roboto", sans-serif; }
 
+.navbar-default {
+  -webkit-transition: background-color, 0.5s;
+  -o-transition: background-color, 0.5s;
+  transition: background-color, 0.5s; }
+
+.navbar-default.transform-navbar {
+  background: #fff; }
+  .navbar-default.transform-navbar .navbar-header .brand-image-container .brand-logo-normal {
+    opacity: 1; }
+  .navbar-default.transform-navbar #navbar a {
+    color: #83c7c9;
+    padding-top: 20px; }
+  .navbar-default.transform-navbar #navbar a.support-us {
+    padding: 10px 20px;
+    margin: 10px 30px 5px 20px; }
+  .navbar-default.transform-navbar #navbar a:hover {
+    color: #0e233e; }
+
 .navbar {
   z-index: 1000; }
-
-.brand-logo {
-  height: 150%; }
-
-.navbar-brand {
-  padding: 0; }
+  .navbar #navbar a {
+    font-size: 1.2em;
+    padding-top: 35px;
+    -webkit-transition: padding-top, 0.5s;
+    -o-transition: padding-top, 0.5s;
+    transition: padding-top, 0.5s; }
+  .navbar #navbar a:hover {
+    color: #83c7c9; }
+  .navbar #navbar a.support-us {
+    background-color: #193d6b;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 15px 35px;
+    margin: 20px 30px 0 30px; }
+  .navbar #navbar a.support-us:hover {
+    background-color: #83c7c9;
+    color: #193d6b; }
+  .navbar .navbar-header .navbar-brand {
+    position: relative;
+    padding: 0;
+    margin-left: 100px;
+    margin-top: 5px; }
+    .navbar .navbar-header .navbar-brand .brand-name {
+      position: absolute;
+      top: 30px;
+      left: 90px;
+      font-size: 1.5em;
+      -webkit-transition: top, 0.5s;
+      -o-transition: top, 0.5s;
+      transition: top, 0.5s; }
+  .navbar .navbar-header .brand-image-container {
+    height: 50px;
+    position: relative; }
+    .navbar .navbar-header .brand-image-container img {
+      height: 100%;
+      position: absolute; }
+    .navbar .navbar-header .brand-image-container .brand-logo-normal {
+      opacity: 0;
+      -webkit-transition: opacity, 0.5s;
+      -o-transition: opacity, 0.5s;
+      transition: opacity, 0.5s; }
 
 #hero-section {
   background: url("../images/hero-image-2.jpg") no-repeat;
@@ -8179,9 +8232,9 @@ body {
     height: 100%;
     top: 0;
     background-color: rgba(14, 35, 62, 0.7);
-    -webkit-transition: background-color, 0.8s;
-    -o-transition: background-color, 0.8s;
-    transition: background-color, 0.8s;
+    -webkit-transition: background-color, 0.5s;
+    -o-transition: background-color, 0.5s;
+    transition: background-color, 0.5s;
     text-align: center;
     font-size: 2.5em;
     color: #fff;
@@ -8203,9 +8256,9 @@ body {
     height: 100%;
     top: 0;
     background-color: rgba(131, 199, 201, 0.7);
-    -webkit-transition: background-color, 0.8s;
-    -o-transition: background-color, 0.8s;
-    transition: background-color, 0.8s;
+    -webkit-transition: background-color, 0.5s;
+    -o-transition: background-color, 0.5s;
+    transition: background-color, 0.5s;
     text-align: center;
     font-size: 2.6em;
     color: #fff;
