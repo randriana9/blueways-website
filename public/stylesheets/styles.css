@@ -1056,7 +1056,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -5185,7 +5185,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5298,7 +5298,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8204,31 +8204,28 @@ body {
       top: 35px;
       left: 100px;
       font-size: 1.5em;
-      -webkit-transition: top, 0.5s;
-      -o-transition: top, 0.5s;
-      transition: top, 0.5s; }
+      -webkit-transition: all, 0.5s;
+      -o-transition: all, 0.5s;
+      transition: all, 0.5s; }
     .navbar .navbar-header .navbar-brand .brand-image-container {
       height: 50px;
       position: relative; }
       .navbar .navbar-header .navbar-brand .brand-image-container img {
         height: 125%;
         position: absolute;
-        -webkit-transition: top, 0.5s;
-        -o-transition: top, 0.5s;
-        transition: top, 0.5s;
-        -webkit-transition: height, 0.5s;
-        -o-transition: height, 0.5s;
-        transition: height, 0.5s; }
+        -webkit-transition: all, 0.5s;
+        -o-transition: all, 0.5s;
+        transition: all, 0.5s; }
       .navbar .navbar-header .navbar-brand .brand-image-container .brand-logo-normal {
         opacity: 0;
-        -webkit-transition: opacity, 0.5s;
-        -o-transition: opacity, 0.5s;
-        transition: opacity, 0.5s; }
+        -webkit-transition: all, 0.5s;
+        -o-transition: all, 0.5s;
+        transition: all, 0.5s; }
       .navbar .navbar-header .navbar-brand .brand-image-container .brand-logo-transparent {
         opacity: 1;
-        -webkit-transition: opacity, 0.5s;
-        -o-transition: opacity, 0.5s;
-        transition: opacity, 0.5s; }
+        -webkit-transition: all, 0.5s;
+        -o-transition: all, 0.5s;
+        transition: all, 0.5s; }
 
 #hero-section {
   background: url("../images/children_sea.jpg") no-repeat;
@@ -8287,25 +8284,65 @@ body {
 
 #third-section {
   background-color: #c7e7f0; }
-  #third-section .section-header {
-    position: relative;
-    height: 25vh;
-    width: 350px;
-    border-bottom: 2px solid #0e233e;
-    margin-bottom: 30px; }
-    #third-section .section-header h2 {
-      position: absolute;
-      bottom: 15px;
-      color: #193d6b;
-      font-size: 2.5em; }
-  #third-section .section-body {
-    text-align: justify;
-    font-size: 1.7em;
-    line-height: 1.9em; }
-  #third-section .carousel-container {
-    margin-top: 35vh;
-    margin-left: 70px; }
-    #third-section .carousel-container p {
-      margin-top: 15px; }
+
+.section-header {
+  position: relative;
+  height: 25vh;
+  width: 350px;
+  border-bottom: 2px solid #0e233e;
+  margin-bottom: 30px; }
+  .section-header h2 {
+    position: absolute;
+    bottom: 15px;
+    color: #193d6b;
+    font-size: 2.5em; }
+
+.section-body {
+  text-align: justify;
+  font-size: 1.7em;
+  line-height: 1.9em; }
+
+.carousel-container {
+  margin-top: 35vh;
+  margin-left: 70px; }
+  .carousel-container p {
+    margin-top: 15px; }
+
+#about {
+  background-color: #c7e7f0;
+  padding-bottom: 60px; }
+  #about .image-about-section {
+    height: 400px;
+    margin-top: 30vh;
+    margin-left: 55px;
+    filter: sepia(70%); }
+
+.grow {
+  -webkit-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s; }
+
+.grow:hover {
+  transform: scale(1.1); }
+
+.video-header video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
+
+.video-header p {
+  text-align: center;
+  margin-top: 40vh;
+  color: #fff;
+  font-size: 5vw; }
 
 /*# sourceMappingURL=styles.css.map */
