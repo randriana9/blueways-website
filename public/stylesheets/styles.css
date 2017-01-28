@@ -8231,15 +8231,11 @@ body {
         transition: opacity, 0.5s; }
 
 #hero-section {
-  background: url("../images/hero-image-2.jpg") no-repeat;
+  background: url("../images/children_sea.jpg") no-repeat;
   background-size: cover;
   text-align: center;
   font-size: 4.5vw;
   color: #FFF; }
-  #hero-section span {
-    position: absolute;
-    top: 350px;
-    left: 250px; }
 
 .section-content {
   height: 100vh; }
@@ -8306,5 +8302,10 @@ body {
     text-align: justify;
     font-size: 1.7em;
     line-height: 1.9em; }
+  #third-section .carousel-container {
+    margin-top: 35vh;
+    margin-left: 70px; }
+    #third-section .carousel-container p {
+      margin-top: 15px; }
 
 /*# sourceMappingURL=styles.css.map */

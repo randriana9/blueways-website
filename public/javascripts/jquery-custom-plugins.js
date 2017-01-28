@@ -12,7 +12,10 @@
                 if(index == 2 && direction == "up"){
                     $("nav").removeClass("transform-navbar");
                 }
-            }
+            },
+
+            /* changing the slideselector to avoid conflict with bootstrap's carousel */
+            slideSelector: '.fullpage-slide'
         });
     });
 
