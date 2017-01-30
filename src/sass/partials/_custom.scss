@@ -4,11 +4,21 @@ body {
     font-family: $main-font-family;
 }
 
+.preload {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1001;
+    background-color: #fff;
+}
+
 .navbar-default {
     @include transition(background-color, $transition-duration);
 }
 
-.navbar-default.transform-navbar {
+.navbar-default.transform-navbar,
+.navbar-default.affix {
     background: #fff;
 
     .navbar-header {

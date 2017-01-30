@@ -1,4 +1,7 @@
 .video-header {
+    text-align: center;
+    height: 70vh;
+
     video {
         position: fixed;
         top: 50%;
@@ -13,12 +16,73 @@
         -webkit-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
     }
+
     p {
-        text-align: center;
-        margin-top: 40vh;
+        margin-top: 35vh;
+        margin-bottom: 60px;
         color: #fff;
         font-size: 5vw;
 
     }
-    
+
+    a {
+        background-color: $primary-color;
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 17px 50px;
+        color: #fff;
+        font-size: 1.4em;   
+    }
+
+    a:hover {
+        background-color: $secondary-color-darker;
+        color: $primary-color;
+        text-decoration: none;
+    }
 }
+
+.intersection {
+    background-color: $tertiary-color-darker;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+
+    h2 {
+        font-size: 3em;
+        padding-top: 90px;
+    }
+
+    blockquote {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+}
+
+.projects-section {
+    background: #fff;
+
+    .media-body {
+        padding-left: 50px;
+    }
+
+   img {
+       max-width: 500px;
+   }
+
+    .project-block {
+        padding: 100px 0;
+        border-bottom: 2px solid $tertiary-color-darker;
+        text-align: justify;
+
+        h3 {
+            font-size: 2em;
+        }
+
+        p {
+            margin-top: 25px;
+            font-size: 1.5em;
+            line-height: 1.9em;
+        }
+    }
+}
+
