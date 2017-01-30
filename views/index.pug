@@ -1,0 +1,72 @@
+extends ./layouts/base.pug
+
+block content 
+    #fullpage
+        #hero-section.section
+            span SAMMEN GJØR VI EN FORSKJELL
+        #second-section.section
+            .container-fluid
+                .row
+                    div(class=['col-md-6', 'section-content', 'section-B'])
+                        a(href='/projects')
+                            img(data-src="images/school-image.jpeg" alt="kids at school")
+                            .image-overlay Blueways vil gjennom flere prosjekter bidra til å bekjempe fattigdom på Madagaskar.
+
+                    div(class=['col-md-6', 'section-content', 'section-A'])
+                        a(href='#support')
+                            img(data-src="images/children.jpg" alt="kids having fun")
+                            .image-overlay
+                                img.like-icon(data-src="images/like.png" alt="thumbs up")
+                                | INGEN KAN GJØRE ALT, MEN ALLE KAN GJØRE LITT!
+
+        #third-section.section
+            .container
+                .row
+                    div(class=['col-md-6', 'section-content'])
+                        .section-header
+                            h2 Litt om Madagascar
+                        .section-body
+                            p.
+                                Madagaskar ligger ca. 400 kilometer øst for Afrikas sørøstlige kyst og er verdens fjerde største øy.
+                                Om lag 80 prosent av dyre- og planteartene på Madagaskar  finnes ikke andre steder i verden.
+                                Befolkningen er på ca. 22 millioner innbyggere. 
+                                På tross av at Madagaskar er rikt på naturressurser, er landets innbyggere blant verdens fattigste.
+                                Rundt 80 prosent av den yrkesaktive befolkningen er sysselsatt i jordbrukssektoren.
+                                Jordbruk og kvegdrift danner det viktigste inntektsgrunnlaget for størstedelen av befolkningen.
+                    .col-md-6
+                        .carousel-container
+                            #carousel-slider.carousel.slide(data-ride="carousel")
+                                .carousel-inner(role="listbox")
+                                    .item.active
+                                        img(src="../images/mada-dry.jpg" alt="Madagascar dry land")
+                                    .item
+                                        img(src="../images/mada-zebu.jpg" alt="Madagascar zebu")
+                            p Vannmangel er et stort problem, særlig for bønder på Madagaskar.
+
+        .section
+            .container
+                h2 Våre øvrige prosjekter
+                .row
+                    .col-md-3
+                        .thumbnail
+                            img(src="../images/mada-dry-2.jpg" alt="Madagascar dry land")
+                            p Blueways bidrar til irrigasjon for bønder på Madagaskar.
+                            p: a(href="/projects#waterpump") Les mer
+                    
+                    .col-md-3
+                        .thumbnail
+                            img(src="../images/rice-field.jpeg" alt="Rice field")
+                            p Blueways skal bidra med kunnskap og utstyr som tillater en mye mer effektiv metode for risplanting.
+                            p: a(href="/projects#rice") Les mer
+
+                    .col-md-3
+                        .thumbnail
+                            img(src="../images/kids-identity.jpg" alt="Children")
+                            p Blueways bidrar til anskaffelse av rent drikkevann.
+                            p: a(href="/projects#cleanwater") Les mer
+
+                    .col-md-3
+                        .thumbnail
+                            img(src="../images/mada-dry-2.jpg" alt="Dry land")
+                            p Blueways skal promotere for å lære gasserne til å kjenne sin egen kultur og sitt eget språk bedre.
+                            p: a(href="/projects#cleanwater") Les mer

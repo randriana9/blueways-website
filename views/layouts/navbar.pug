@@ -1,0 +1,37 @@
+nav(class=['navbar', 'navbar-default', 'navbar-fixed-top'])
+    .container-fluid
+        .navbar-header
+            button(
+                type="button"
+                class=['navbar-toggle', 'collapsed']
+                data-toggle="collapse"
+                data-target="#navbar"
+                aria-expanded="false"
+                aria-controls="navbar"
+            )
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+
+            .navbar-brand
+                span.brand-name BLUEWAYS
+                .brand-image-container
+                    img.brand-logo-transparent(
+                        src="images/logo_white.png" 
+                        alt="BLUEWAYS-LOGO"
+                    )
+                    img.brand-logo-normal(
+                        src="images/logo.png" 
+                        alt="BLUEWAYS-LOGO"
+                    )
+
+        #navbar.collapse.navbar-collapse
+            ul(class=["nav", "navbar-nav", "navbar-right"])
+                li: a(href="/") HJEM
+                li: a(href="/about") OM OSS
+                li: a(href="/projects") VÅRE PROSJEKTER
+                li: a(href="/contact") KONTAKT
+                li: a(href="#news") NYHETER
+                li: a(class="support-us" href="/#support") GI STØTTE
+
