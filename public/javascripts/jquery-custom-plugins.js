@@ -45,5 +45,21 @@
                 }
             }
         });
-    }); 
+    });
+
+
+    
+    $(window).scroll(function() {
+        var windowScrollTop = $(window).scrollTop();
+
+        if(windowScrollTop >= 650) {
+            $('#biImage-1').hide();
+            $('#biImage-2').show();
+        } else if (windowScrollTop < 650) {
+            $('#biImage-1').show();
+            $('#biImage-2').hide();
+        }
+        
+    })
+
 })()

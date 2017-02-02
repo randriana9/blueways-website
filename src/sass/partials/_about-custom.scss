@@ -1,6 +1,6 @@
 #about {
     background-color: $tertiary-color;
-    padding-bottom: 60px;
+    padding-bottom: 150px;
 
    .image-about-section {
        height: 400px;
@@ -8,6 +8,52 @@
        margin-left: 55px;
        filter: sepia(70%);
    }
+}
+
+.image-header {
+    height: 90vh;
+    width: 95vw;
+    position: relative;
+
+    img {
+       height: 100%;
+       width: 100%;
+       object-fit: cover;
+       position: fixed;
+       z-index: -5;
+    }
+}
+
+#corevalues {
+    background-color: $secondary-color-darker-transparent-09;
+
+    h2, p {
+        text-align: center;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 4.7em;
+        padding-top: 80px;
+        color: $primary-color-darker;
+    }
+
+    p {
+        margin-top: 30px;
+        font-size: 4.2em;
+        padding-bottom: 80px;
+        color: $tertiary-color;
+    }
+}
+
+#vision {
+    height: 50vh;
+    background-color: #fff;
+
+}
+
+#biImage-2 {
+    display: none;
 }
 
 

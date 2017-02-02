@@ -1,4 +1,39 @@
 extends ./layouts/base.pug
 
 prepend content
-    
+    header
+        .image-header
+            img(src="../images/children-school.jpg")
+    #contact-body
+        .container
+            .center-block.form-container
+                .form-container-header
+                    h1 KONTAKT OSS
+                    p Ta gjerne kontakt dersom du ønsker å vite mer om oss, våre prosjekter eller om du har andre henvendelser.
+                .form-container-body
+                    .form-layout
+                        .form-header
+                            h2 KONTAKT OSS
+                            hr
+                        .form-body
+                            form(action="haha")
+                                ul
+                                    li
+                                        label.form-requires-symbol(for="name") Navn
+                                        input#name(type="text")
+                                    li
+                                        label.form-requires-symbol(for="email") E-post
+                                        input#email(type="email")
+                                    li
+                                        label(for="mobile") Mobil
+                                        input#mobile(type="number")
+                                    li
+                                        label(for="subject") Emne
+                                        input#subject(type="text")
+                                .textarea-container
+                                    p.form-requires-symbol Beskjed
+                                    textarea#name(rows="7")
+                                input#submitbutton(type="submit" value="Send")
+
+
+

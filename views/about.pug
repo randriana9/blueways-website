@@ -1,6 +1,10 @@
 extends ./layouts/base.pug
 
 prepend content
+    header
+        .image-header
+            img#biImage-1(src="../images/poor-boy.jpeg")
+            img#biImage-2(src="../images/hands.jpeg")
     section#about
         .container
             .row
@@ -20,5 +24,9 @@ prepend content
                 .col-md-6
                     img(class=['image-about-section', 'grow'] src="../images/image-kids.jpg" alt="Image kids Madagascar ")
     
-    #vision
+    section#corevalues
+        h2 Kjerneverdier
+        p <i>Engasjement - Medmenneskelighet - Solidaritet </i>
+
+    section#vision
                         
