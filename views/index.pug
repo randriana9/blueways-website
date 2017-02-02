@@ -19,7 +19,7 @@ block content
                                 img.like-icon(data-src="images/like.png" alt="thumbs up")
                                 | INGEN KAN GJØRE ALT, MEN ALLE KAN GJØRE LITT!
 
-        #third-section.section
+        #third-section.section.active
             .container
                 .row
                     div(class=['col-md-6', 'section-content'])
@@ -33,40 +33,46 @@ block content
                                 På tross av at Madagaskar er rikt på naturressurser, er landets innbyggere blant verdens fattigste.
                                 Rundt 80 prosent av den yrkesaktive befolkningen er sysselsatt i jordbrukssektoren.
                                 Jordbruk og kvegdrift danner det viktigste inntektsgrunnlaget for størstedelen av befolkningen.
+                        img(src="../images/mada-silhouette-2-thick.svg")
                     .col-md-6
                         .carousel-container
                             #carousel-slider.carousel.slide(data-ride="carousel")
-                                .carousel-inner(role="listbox")
+                                .carousel-inner(role="listbox" style="border: 4px solid black;")
                                     .item.active
                                         img(src="../images/mada-dry.jpg" alt="Madagascar dry land")
                                     .item
                                         img(src="../images/mada-zebu.jpg" alt="Madagascar zebu")
                             p Vannmangel er et stort problem, særlig for bønder på Madagaskar.
 
-        .section
-            .container
+        #misc-projects.section
+            .container-fluid
                 h2 Våre øvrige prosjekter
                 .row
                     .col-md-3
                         .thumbnail
-                            img(src="../images/mada-dry-2.jpg" alt="Madagascar dry land")
-                            p Blueways bidrar til irrigasjon for bønder på Madagaskar.
-                            p: a(href="/projects#waterpump") Les mer
+                            a(href="/projects#waterpump")
+                                img.grow(src="../images/mada-dry-2.jpg" alt="Madagascar dry land")
+                                h3 IRRIGASJON
                     
                     .col-md-3
                         .thumbnail
-                            img(src="../images/rice-field.jpeg" alt="Rice field")
-                            p Blueways skal bidra med kunnskap og utstyr som tillater en mye mer effektiv metode for risplanting.
-                            p: a(href="/projects#rice") Les mer
+                            a(href="/projects#rice")
+                                img.grow(src="../images/rice-field.jpeg" alt="Rice field")
+                                h3 RISPLANTING
 
                     .col-md-3
                         .thumbnail
-                            img(src="../images/kids-identity.jpg" alt="Children")
-                            p Blueways bidrar til anskaffelse av rent drikkevann.
-                            p: a(href="/projects#cleanwater") Les mer
-
+                            a(href="/projects#clean-water")
+                                img.grow(src="../images/hero-image-2.jpg" alt="Children")
+                                h3 RENT DRIKKEVANN
+                            
                     .col-md-3
                         .thumbnail
-                            img(src="../images/mada-dry-2.jpg" alt="Dry land")
-                            p Blueways skal promotere for å lære gasserne til å kjenne sin egen kultur og sitt eget språk bedre.
-                            p: a(href="/projects#cleanwater") Les mer
+                            a(href="/projects#identity")
+                                img.grow(src="../images/kids-identity.jpg" alt="Children")
+                                h3 IDENTITET
+                            
+            
+        .section.fp-auto-height
+            //- must include footer in index to integrate it with fullpage.js
+            include ./layouts/footer.pug

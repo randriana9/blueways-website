@@ -35,6 +35,18 @@ $transition-duration: 0.5s;
     -o-transition: $property $duration;
 }
 
+@mixin listcolumns($number) {
+    columns: $number;
+    -webkit-columns: $number;
+    -moz-columns: $number;
+    -o-columns: $number;
+}
+
+@mixin blur-filter($degree) {
+    -webkit-filter: blur($degree);
+    filter: blur($degree);
+}
+
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.

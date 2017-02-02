@@ -1,6 +1,6 @@
 extends ./layouts/base.pug
 
-block content
+prepend content
     .video-header
         video(playsinline autoplay muted loop)
             source(src='../videos/waterpump.mp4', type='video/mp4')
@@ -32,7 +32,7 @@ block content
                             | Pumpen krever ingen annen kraftkilde enn den kinetiske energien som er i det
                             | strømmende elvevannet. Pumpene skal hjelpe bøndene til å distibuere/frakte vann
                             | for å fremme veksten i tørre og  høytliggende områder.
-            .project-block
+            #rice.project-block
                 .media
                     .media-left.media-container
                         img.media-object(src='../images/rice-planting.png', alt='')
@@ -48,7 +48,7 @@ block content
                             | forenkle og effektivitisere risplantingen. Med en risplate-maskin som håndteres av kun en
                             | person, vil energi og tid for et dusin mennesker satt til tilsvarende arbeid bli bespart.
                             | Dette er tid som istedet f eks kan gå til skolegang for barna.
-            .project-block
+            #clean-water.project-block
                 .media
                     .media-left.media-container
                         img.media-object(src='../images/kids-water.jpg', alt='')
@@ -61,7 +61,7 @@ block content
                             | vil være drevet av solenergi. Designet på systemet vil være enkelt og rimelig å
                             | produsere slik at selv små lokale gassiske verksteder skal kunne produsere det.
                             | Målet er at folk på landet skal bli selvforsynte med kontinuerlig rent drikkevann.
-            .project-block
+            #identity.project-block
                 .media
                     .media-left.media-container
                         img.media-object(src='../images/kids-identity.jpg', alt='')
