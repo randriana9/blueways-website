@@ -6,7 +6,7 @@ prepend content
             img(src="../images/children-school.jpg")
     #contact-body
         .container
-            .center-block.form-container
+            .form-container
                 .form-container-header
                     h1 KONTAKT OSS
                     p Ta gjerne kontakt dersom du ønsker å vite mer om oss, våre prosjekter eller om du har andre henvendelser.
@@ -16,23 +16,23 @@ prepend content
                             h2 KONTAKT OSS
                             hr
                         .form-body
-                            form(action="haha")
+                            form(action="/mail/send" method="POST")
                                 ul
                                     li
                                         label.form-requires-symbol(for="name") Navn
-                                        input#name(type="text")
+                                        input#name(type="text" name="name" required)
                                     li
                                         label.form-requires-symbol(for="email") E-post
-                                        input#email(type="email")
+                                        input#email(type="email" name="email" required)
                                     li
                                         label(for="mobile") Mobil
-                                        input#mobile(type="number")
+                                        input#mobile(type="number" name="mobile")
                                     li
                                         label(for="subject") Emne
-                                        input#subject(type="text")
+                                        input#subject(type="text" name="subject")
                                 .textarea-container
                                     p.form-requires-symbol Beskjed
-                                    textarea#name(rows="7")
+                                    textarea#name(rows="7" name="message" required)
                                 input#submitbutton(type="submit" value="Send")
 
 

@@ -4,13 +4,11 @@ body {
     font-family: $main-font-family;
 }
 
-.preload {
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1001;
-    background-color: #fff;
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .navbar-default {
