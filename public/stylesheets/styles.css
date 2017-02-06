@@ -8434,8 +8434,33 @@ footer {
     color: #c7e7f0; }
 
 #vision {
-  height: 50vh;
-  background-color: #fff; }
+  background-color: #83c7c9;
+  text-align: center; }
+  #vision h2 {
+    font-size: 3em;
+    color: #193d6b;
+    display: inline-block;
+    margin-top: 60px;
+    border-bottom: 3px solid #193d6b;
+    padding: 0 15px 15px; }
+  #vision p {
+    margin: 20px 100px 80px;
+    font-size: 2.2em;
+    line-height: 1.8em;
+    text-align: center; }
+  #vision .thumbnail {
+    position: relative;
+    background-color: #83c7c9;
+    border: none;
+    font-size: 1em;
+    z-index: 2;
+    padding: 50px 20px; }
+    #vision .thumbnail img {
+      width: 320px;
+      height: 240px;
+      margin-bottom: 10px; }
+    #vision .thumbnail span {
+      color: #595959; }
 
 #biImage-2 {
   display: none; }

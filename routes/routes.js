@@ -21,6 +21,18 @@ router.get('/contact', function(req, res, next) {
   res.render('contact');
 })
 
+router.get('/support', function(req, res, next) {
+  res.render('support');
+})
+
+router.get('/member', function(req, res, next) {
+  res.render('member');
+})
+
+router.get('/news', function(req, res, next) {
+  res.render('news');
+})
+
 router.get('/contactresponse', function(req, res, next) {
   res.render('contactresponse');
 })

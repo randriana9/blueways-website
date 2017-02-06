@@ -47,8 +47,44 @@
 }
 
 #vision {
-    height: 50vh;
-    background-color: #fff;
+    background-color: $secondary-color-darker;
+    text-align: center;
+
+    h2 {
+        font-size: 3em;
+        color: $primary-color;
+        display: inline-block;
+        margin-top: 60px;
+        border-bottom: 3px solid $primary-color;
+        padding: 0 15px 15px;
+    }
+
+    p {
+        margin: 20px 100px 80px;
+        font-size: 2.2em;
+        line-height: 1.8em;
+        text-align: center;
+    }
+
+    .thumbnail {
+        position: relative;
+        background-color: $secondary-color-darker;
+        border: none;
+        font-size: 1em;
+        z-index: 2;
+        padding: 50px 20px;
+
+        img {
+            width: 320px;
+            height: 240px;
+            margin-bottom: 10px;
+        }
+
+        span {
+            color: #595959;
+
+        }
+    }
 
 }
 
