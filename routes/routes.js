@@ -37,4 +37,8 @@ router.get('/contactresponse', function(req, res, next) {
   res.render('contactresponse');
 })
 
+router.get('/member-response', function(req, res, next) {
+  res.render('member-response');
+})
+
 module.exports = router;

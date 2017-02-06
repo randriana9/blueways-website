@@ -344,6 +344,108 @@ footer {
     }
 }
 
+.headerhr-primary {
+    margin: 0;
+    border-top: 8px solid $tertiary-color-darker;
+}
+
+.triangle {
+    height: 20px;
+    background-color: $tertiary-color;
+    width: 100%;
+}
+
+#supportpage {
+    background: $tertiary-color;
+
+    .col-md-6:first-child {
+        border-right: 4px solid $tertiary-color-darker;
+    }
+
+    .col-md-6 {
+        margin: 65px 0;
+    }
+
+    .col-md-6:last-child {
+        p {
+            margin-top: 110px;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        ul {
+            padding-left: 100px;
+            @include listcolumns(2);
+
+            li {
+                list-style-type: none;
+                font-size: 1.5em;
+            }
+        }
+
+        img {
+            width: 350px;
+            position: absolute;
+            top: 25vh;
+            left: 25vh;
+        }
+
+        .content {
+            padding: 0 50px;
+            z-index: 10;
+            position: relative;
+
+            table {
+                margin: 50px auto 0;
+                
+
+                th {
+                    text-align: center;
+                    font-size: 1.5em;
+                    font-weight: 400;
+                    padding: 0 125px;
+                }
+
+                td {
+                    text-align: center;
+                    font-size: 2.5em;
+                    font-weight: 900;
+                }
+            }
+
+            span {
+                text-align: center;
+                display: block;
+                font-size: 2.3em;
+                margin: 25px 0;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .section-header {
+        font-size: 1.5em;
+        margin-left: 50px;
+        height: 20vh;
+    }
+
+    .section-body {
+        height:  100%;
+        position: relative;
+        margin-top: 0px;
+        padding: 0 50px;
+
+        p.upper {
+            text-align: left;
+            font-size: 1em;
+        }
+
+        p {
+            font-size: 0.8em;
+        }
+    }
+}
+
 
 
 

@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/routes');
-var mail = require('./routes/mail');
+var mail = require('./routes/mail.router');
 
 var app = express();
 

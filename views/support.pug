@@ -1,3 +1,37 @@
 extends ./layouts/base.pug
 
 prepend content
+    header
+        .image-header
+            img(src="../images/support.jpeg")
+        hr.headerhr-primary
+        img(src=("../images/triangle-tertiary-darker.svg") class=["triangle", "center-block"])
+    #supportpage
+        .container-fluid
+            .row
+                .col-md-6
+                    .section-header
+                        h2 STØTT OSS!
+                    .section-body
+                        p.upper
+                            |<i>DIN STØTTE HAR STOR BETYDNING FOR GJENNOMFØRINGEN AV VÅRE PROSJEKTER</i>
+                        p
+                            |Blueways er avhengig av ekstern støtte, både fra individer så vel som organisasjoner og firmaer. Din støtte kan komme i form av gaver eller donasjon.
+                            |Din støtte, uansett form eller størrelse i sin helhet, kommer til å finansiere prosjektene.
+                            |Vær trygg på at din støtte kommer til å påvirke fattige menneskers liv på Madagaskar!
+
+                .col-md-6
+                    img(src="../images/heart-2.svg")
+                    .content
+                        p PENGEGAVER KAN OVERFØRES TIL FØLGENDE KONTO:
+                        table
+                            tr
+                                th Kontonr:
+                                th Vipps:
+                            tr
+                                td 1503.77.79420
+                                td 25009
+                        p Vi er svært takknemlig for din støtte/bidrag uansett form eller størrelse
+                        span TUSEN TAKK!
+                            
+                    
