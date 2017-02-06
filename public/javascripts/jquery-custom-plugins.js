@@ -14,6 +14,15 @@
                 }
             },
 
+            /* reveal "misc projects"-images when entering the section */
+            afterLoad: function(anchorLink, index) {
+                if(index == 4) {
+                    $('.revealAnimation').each(function(i) {
+                        $(this).delay(150*(i)).animate({opacity: 1}); //Uses the each methods index+1 to create a multiplier on the delay
+                    });
+                }
+            },
+
             /* changing the slideselector to avoid conflict with bootstrap's carousel */
             slideSelector: '.fullpage-slide'
         });
@@ -48,7 +57,7 @@
     });
 
 
-    
+    /* change background image in about-page */
     $(window).scroll(function() {
         var windowScrollTop = $(window).scrollTop();
 
@@ -59,7 +68,10 @@
             $('#biImage-1').show();
             $('#biImage-2').hide();
         }
-        
     })
+
+    /* scrollreveal */
+    window.sr = ScrollReveal();
+    sr.reveal('.reveal', { delay: 500});
 
 })()

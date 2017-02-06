@@ -48,4 +48,8 @@ var bs = require('browser-sync').create();
         /* copy fullpage.js javascripts */
         gulp.src(['node_modules/fullpage.js/dist/jquery.fullpage.min.js', 'node_modules/fullpage.js/dist/jquery.fullpage.js'])
         .pipe(gulp.dest('public/javascripts/fullpage.js'));
+
+        /* copy scrollreveal */
+        gulp.src(['node_modules/scrollreveal/dist/scrollreveal.min.js'])
+        .pipe(gulp.dest('public/javascripts/scrollreveal'));
     })

@@ -8368,6 +8368,8 @@ body {
     #misc-projects .thumbnail h3 {
       color: #000;
       margin-top: 20px; }
+    #misc-projects .thumbnail .revealAnimation {
+      opacity: 0; }
   #misc-projects .thumbnail:hover img {
     filter: grayscale(0%); }
   #misc-projects .thumbnail:hover h3 {
@@ -8478,7 +8480,6 @@ footer {
 
 .image-header {
   height: 90vh;
-  width: 95vw;
   position: relative; }
   .image-header img {
     height: 100%;

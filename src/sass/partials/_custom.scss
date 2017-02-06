@@ -295,6 +295,11 @@ body {
             color: #000;
             margin-top: 20px;
         }
+
+        .revealAnimation {
+            opacity: 0;
+        }
+        
     }
 
     .thumbnail:hover {
@@ -308,6 +313,8 @@ body {
             font-weight: 600;
         }   
     }
+
+    
 }
 
 footer {
@@ -445,7 +452,6 @@ footer {
         }
     }
 }
-
 
 
 
