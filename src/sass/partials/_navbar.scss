@@ -28,7 +28,7 @@
 }
 
 .navbar-overlay {
-    position: absolute;
+    position: fixed;
     z-index: 9998;
     bottom: -99%;
     height: 100%;
