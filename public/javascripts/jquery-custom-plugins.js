@@ -41,6 +41,18 @@
                 $body.scrollLeft(0);
             }
         });
+
+
+        //navbar animation
+        $(document).ready(function () {
+            $('.hamburger-menu').click(function() {
+                $('.navbar-overlay').toggleClass('anim');
+            });
+
+            $('.animation').click(function(){
+                $('.anim').toggleClass('reverse-animation');
+            })
+        });
     });
 
 
