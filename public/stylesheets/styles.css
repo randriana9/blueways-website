@@ -8380,7 +8380,7 @@ footer {
   z-index: 9999;
   position: absolute;
   top: 20px;
-  left: 10px;
+  right: 10px;
   width: 35px;
   height: 4px;
   background: #ffffff;
@@ -8403,21 +8403,21 @@ footer {
   z-index: 9998;
   bottom: -99%;
   height: 100%;
-  background: #30C4C9;
-  left: 0;
+  background: rgba(14, 35, 62, 0.7);
+  right: 0;
   width: 100%;
   transition: all 0.5s ease; }
   .navbar-overlay.anim {
-    left: 0;
+    right: 0;
     bottom: 0;
     animation: menu-anim 1s 1 ease-out normal;
-    width: 25%;
+    width: 100%;
     transition: all 0.5s ease; }
     .navbar-overlay.anim.reverse-anim {
-      left: 0;
+      right: 0;
       bottom: 0;
       animation: menu-anim 1s 1 ease-out reverse;
-      width: 25%;
+      width: 100%;
       transition: all 0.5s ease; }
   .navbar-overlay ul {
     width: 100%;
@@ -8428,7 +8428,8 @@ footer {
     font-size: 2em;
     font-weight: 800; }
     .navbar-overlay ul li {
-      margin: 10px 0; }
+      margin: 10px 0;
+      list-style: none; }
       .navbar-overlay ul li a {
         text-decoration: none;
         color: white;
@@ -8459,21 +8460,25 @@ footer {
 
 @-webkit-keyframes menu-anim {
   0% {
-    left: 0;
+    right: 0;
     bottom: -99%;
-    width: 100%; }
+    width: 100%;
+    background: #0e233e; }
   33% {
-    left: -99.5%;
+    right: -99.5%;
     bottom: -99%;
-    width: 100%; }
+    width: 100%;
+    background: #0e233e; }
   66% {
-    left: -99.5%;
+    right: -99.5%;
     bottom: 0;
-    width: 100%; }
+    width: 100%;
+    background: #0e233e; }
   100% {
     bottom: 0;
-    left: 0;
-    width: 25%; } }
+    right: 0;
+    width: 100%;
+    background: rgba(14, 35, 62, 0.7); } }
 
 /*.navbar-default {
     @include transition(background-color, $transition-duration);

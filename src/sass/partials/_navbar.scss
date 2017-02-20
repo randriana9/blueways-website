@@ -2,7 +2,7 @@
     z-index: 9999;
     position: absolute;
     top: 20px;
-    left: 10px;
+    right: 10px;
     width: 35px;
     height: 4px;
     background: #ffffff;
@@ -32,23 +32,23 @@
     z-index: 9998;
     bottom: -99%;
     height: 100%;
-    background: #30C4C9;
-    left: 0;
+    background: $primary-color-darker-transparent;
+    right: 0;
     width: 100%;
     transition: all 0.5s ease;
 
     &.anim {
-        left: 0;
+        right: 0;
         bottom: 0;
         animation: menu-anim 1s 1 ease-out normal;
-        width: 25%;
+        width: 100%;
         transition: all 0.5s ease;
 
         &.reverse-anim {
-            left: 0;
+            right: 0;
             bottom: 0;
             animation: menu-anim 1s 1 ease-out reverse;
-            width: 25%;
+            width: 100%;
             transition: all 0.5s ease;
         }
     }
@@ -64,6 +64,7 @@
 
         li {
             margin: 10px 0;
+            list-style: none;
 
             a {
                 text-decoration: none;
@@ -110,27 +111,31 @@
 @-webkit-keyframes menu-anim {
 
     0% {
-    left: 0;
+    right: 0;
     bottom: -99%;
     width: 100%;
+    background: $primary-color-darker;
     }
 
     33% {
-    left: -99.5%;
+    right: -99.5%;
     bottom: -99%;
     width: 100%;
+    background: $primary-color-darker;
     }
 
     66% {
-    left: -99.5%;
+    right: -99.5%;
     bottom: 0;
     width: 100%;
+    background: $primary-color-darker;
     }
 
     100% {
     bottom: 0;
-    left: 0;
-    width: 25%;
+    right: 0;
+    width: 100%;
+    background: $primary-color-darker-transparent;
     }
 
 }
