@@ -24,13 +24,23 @@
             },
 
             /* changing the slideselector to avoid conflict with bootstrap's carousel */
-            slideSelector: '.fullpage-slide'
+            slideSelector: '.fullpage-slide',
+            responsiveWidth: '1050'
         });
 
 
         window.setTimeout(function(){
             $('.preload').fadeOut();
         },500);
+
+        // "Disable" the horizontal scroll.
+        var $body = $(document);
+
+        $body.bind('scroll', function() {
+            if ($body.scrollLeft() !== 0) {
+                $body.scrollLeft(0);
+            }
+        });
     });
 
 
