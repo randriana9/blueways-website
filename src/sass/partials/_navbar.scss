@@ -1,0 +1,139 @@
+.navbar-default {
+    @include transition(background-color, $transition-duration);
+}
+
+.navbar-default.transform-navbar,
+.navbar-default.affix {
+    background: #fff;
+
+    .navbar-header {
+        .navbar-brand {
+            padding: 0 15px;
+            .brand-image-container {
+
+                img {
+                    height: 100%;
+                    top: 5px;
+                }
+                .brand-logo-normal {
+                    opacity: 1;
+                }
+                .brand-logo-transparent {
+                    opacity: 0;
+                }
+            }
+            .brand-name {
+                top: 20px;
+                left: 90px;
+                font-size: 1.3em;
+
+                a {
+                    color: $primary-color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    #navbar {
+        a {
+            color: $secondary-color-darker;
+            padding-top: 20px;
+        }
+
+        a.support-us { 
+            padding: 10px 20px;
+            margin: 10px 30px 5px 20px;
+        }
+
+        a:hover {
+            color: $primary-color-darker;
+        }
+    }
+    
+}
+
+.navbar {
+    z-index: $zindex-navbar;
+
+    #navbar {
+        a {
+            font-size: 1.2em;
+            padding-top: 35px;
+            @include transition(padding-top, $transition-duration);
+        }
+
+        a:hover, a:focus, a:active {
+            color: $secondary-color-darker;
+        }
+
+        a.support-us {
+            background-color: $primary-color;
+            border: 1px solid;
+            border-radius: 4px;
+            padding: 15px 35px;
+            margin: 20px 30px 0 30px;
+        }
+
+        a.support-us:hover {
+            background-color: $secondary-color-darker;
+            color: $primary-color;
+        }
+    }
+    
+    .navbar-header {
+
+        .navbar-toggle {
+            border: none;
+
+            .icon-bar {
+                background-color: $primary-color-darker;
+            }
+
+            &:hover {
+                background-color: transparent;
+
+                .icon-bar {
+                    background-color: lighten($primary-color-darker, 20%);
+                }
+            }
+
+        }
+        
+        .navbar-brand {
+            margin-left: 0;
+
+            .brand-name {
+                position: absolute;
+                top: 35px;
+                left: 100px;
+                font-size: 1.5em;
+                @include transition(all, $transition-duration);
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+            .brand-image-container {
+                height: 50px;
+                position: relative;
+
+                img {
+                    height: 125%;
+                    position: absolute;
+                    @include transition(all, $transition-duration);
+                }
+
+                .brand-logo-normal {
+                    opacity: 0;
+                    @include transition(all, $transition-duration);
+                }
+
+                .brand-logo-transparent {
+                    opacity: 1;
+                    @include transition(all, $transition-duration);
+                }
+            }
+        }
+    }
+}
