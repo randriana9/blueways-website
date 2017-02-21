@@ -18,17 +18,18 @@ prepend content
                             hr
                         .form-body
                             form(action="/mail/send" method="POST")
-                                ul
-                                    li
+                                .row
+                                    .col-md-6
                                         label.form-requires-symbol(for="name") Navn
                                         input#name(type="text" name="name" required)
-                                    li
+                                    .col-md-6
                                         label.form-requires-symbol(for="email") E-post
                                         input#email(type="email" name="email" required)
-                                    li
+                                .row
+                                    .col-md-6
                                         label(for="mobile") Mobil
                                         input#mobile(type="number" name="mobile")
-                                    li
+                                    .col-md-6
                                         label(for="subject") Emne
                                         input#subject(type="text" name="subject")
                                 .textarea-container

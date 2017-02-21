@@ -16,7 +16,7 @@ body {
     background-size: cover;
     background-position:center center;
     text-align: center;
-    font-size: 4.5vw;
+    font-size: 9vw;
     color: #FFF;
 }
 
@@ -33,6 +33,10 @@ body {
         }
     }
 
+    .section-A, .section-B {
+        height: 50vh;
+    }
+
     .section-A {
         padding: 0;
 
@@ -45,9 +49,8 @@ body {
             @include transition(background-color, $transition-duration);
 
             text-align: center;
-            font-size: 2.5em;
+            font-size: 6vw;
             color: #fff;
-            padding: 260px 50px;
 
             .like-icon {
                 height: 130px;
@@ -76,9 +79,9 @@ body {
             @include transition(background-color, $transition-duration);
 
             text-align: center;
-            font-size: 2.6em;
+            font-size: 8vw;
             color: #fff;
-            padding: 50vh 30px;
+            padding: 10%;
         }
 
         .image-overlay:hover {
@@ -92,12 +95,13 @@ body {
 
     .section-content {
         position: relative;
+        height: 200vh;
 
         img {
             position: absolute;
-            top: 70px;
-            left: -80px;
-            height: 85%;
+            top: 10vh;
+            left: 0vw;
+            max-width: 90%;
             z-index: 0;
         }
     }
@@ -105,34 +109,31 @@ body {
 
 .section-header {
     position: relative;
-    height: 25vh;
-    width: 350px;
+    height: 20vh;
+    width: 90vw;
     border-bottom: 2px solid $primary-color-darker;
     margin-bottom: 30px;
     z-index: 2;
 
     h2 {
         position: absolute;
-        bottom: 15px;
+        bottom: 0;
         color: $primary-color;
-        font-size: 2.5em;
-        
+        font-size: 9vw;
     }
 }
 
 .section-body {
-    text-align: justify;
-    font-size: 1.7em;
+    text-align: center;
+    font-size: 7vw;
     line-height: 1.9em;
     z-index: 501;
     position: absolute;
+    left: 0;
+    padding: 10px;
 }
 
-
 .carousel-container {
-    margin-top: 35vh;
-    margin-left: 70px;
-
     p {
         margin-top: 15px;
     }
@@ -272,14 +273,14 @@ footer {
         }
 
         img {
-            width: 350px;
+            //width: 350px;
             position: absolute;
             top: 25vh;
-            left: 25vh;
+            //left: 25vh;
         }
 
         .content {
-            padding: 0 50px;
+            padding: 0 10px 0 0;
             z-index: 10;
             position: relative;
 
@@ -289,14 +290,14 @@ footer {
 
                 th {
                     text-align: center;
-                    font-size: 1.5em;
+                    font-size: 8vw;
                     font-weight: 400;
-                    padding: 0 125px;
+                    padding: 0 3vw;
                 }
 
                 td {
                     text-align: center;
-                    font-size: 2.5em;
+                    font-size: 5vw;
                     font-weight: 900;
                 }
             }
@@ -310,18 +311,11 @@ footer {
             }
         }
     }
-
-    .section-header {
-        font-size: 1.5em;
-        margin-left: 50px;
-        height: 20vh;
-    }
-
     .section-body {
         height:  100%;
         position: relative;
         margin-top: 0px;
-        padding: 0 50px;
+        padding: 0 10px;
 
         p.upper {
             text-align: left;

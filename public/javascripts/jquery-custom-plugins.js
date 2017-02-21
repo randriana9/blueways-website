@@ -33,16 +33,6 @@
             $('.preload').fadeOut();
         },500);
 
-        // "Disable" the horizontal scroll.
-        var $body = $(document);
-
-        $body.bind('scroll', function() {
-            if ($body.scrollLeft() !== 0) {
-                $body.scrollLeft(0);
-            }
-        });
-
-
         //navbar animation
         $(document).ready(function () {
             var overlayActive = false;

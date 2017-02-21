@@ -2,7 +2,7 @@
     background-color: #fff;
     .form-container {
         .form-container-header {
-            margin-top: 150px;
+            margin-top: 15vh;
             text-align: center;
 
             h1 {
@@ -24,7 +24,7 @@
             border: 1px solid #dddddd;
             box-shadow: 0px 0px 0 5px #f5f5f5;
             border-radius: 10px;
-            width: 55vw;
+            max-width: 750px; 
             margin: 100px auto 100px;
 
             .form-header {
@@ -41,35 +41,25 @@
             }
 
             .form-body {
-                padding-right: 20px;
-                ul {
-                    @include listcolumns(2);
-                    padding: 0;
-
-                    li {
-                        list-style-type: none;
-                        margin-left: 20px;
-                        margin-bottom: 20px;
-
-                        input {
-                            width: 100%;
-                            height: 45px;
-                            border: 1px solid #dddddd;
-                            border-radius: 5px;
-                            font-size: 1.2em;
-                            padding: 10px;
-                        }
-                    }
+                .row {
+                    margin: 0;
                 }
-
+                
+                input:not(#submitbutton) {
+                    width: 100%;
+                    height: 45px;
+                    border: 1px solid #dddddd;
+                    border-radius: 5px;
+                    font-size: 1.2em;
+                    padding: 10px;
+                }
+                    
                 .textarea-container {
-                    margin-left: 20px;
-
+                    margin: 0 15px;
                     textarea {
                         width: 100%;
                         border: 1px solid #dddddd;
                         border-radius: 5px;
-                        margin-bottom: 20px;
                         font-size: 1.3em;
                     }
 
@@ -79,7 +69,7 @@
                 }
 
                 #submitbutton {
-                    margin: 0 0 20px 20px;
+                    margin: 20px 15px;
                     background-color: $primary-color;
                     color: $secondary-color;
                     padding: 10px 40px;

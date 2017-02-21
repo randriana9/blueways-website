@@ -1,6 +1,6 @@
 #about {
     background-color: $tertiary-color;
-    padding-bottom: 150px;
+    height: 180vh;
 
    .image-about-section {
        height: 400px;
@@ -11,12 +11,13 @@
 }
 
 .image-header {
-    height: 90vh;
+    height: 70vh;
+    width: 100vw;
     position: relative;
 
     img {
-       height: 100%;
-       width: 100%;
+       height: 100vh;
+       width: inherit;
        object-fit: cover;
        position: fixed;
        z-index: -5;
@@ -32,14 +33,14 @@
     }
 
     h2 {
-        font-size: 4.7em;
+        font-size: 15vw;
         padding-top: 80px;
         color: $primary-color-darker;
     }
 
     p {
         margin-top: 30px;
-        font-size: 4.2em;
+        font-size: 10vw;
         padding-bottom: 80px;
         color: $tertiary-color;
     }
@@ -50,7 +51,7 @@
     text-align: center;
 
     h2 {
-        font-size: 3em;
+        font-size: 10vw;
         color: $primary-color;
         display: inline-block;
         margin-top: 60px;
@@ -59,8 +60,8 @@
     }
 
     p {
-        margin: 20px 100px 80px;
-        font-size: 2.2em;
+        margin: 20px 0 80px;
+        font-size: 7vw;
         line-height: 1.8em;
         text-align: center;
     }

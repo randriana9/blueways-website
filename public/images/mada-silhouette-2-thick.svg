@@ -1,3 +1,89 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640"><defs><path d="M358.62 590.11L345.79 602.02C332.64 613.69 317.35 622.92 299.93 629.73C282.5 636.53 266.82 636.86 252.88 630.7C235.14 622.27 221.83 610.93 212.96 596.67C204.09 582.41 199.34 565 198.7 544.42C185.71 517.03 182.15 489.81 188.01 462.75C193.87 435.69 208.25 406.28 231.14 374.53L235.18 353.62C233.12 347.63 228.21 329.89 220.45 300.4C208.81 256.16 216.88 232.83 235.89 210.47C248.57 195.56 272.17 181.87 306.7 169.39C337.72 154.38 359.04 139.14 370.69 123.67C388.15 100.46 388.35 85.88 393.98 77.26C397.72 71.51 403.21 64.94 410.44 57.54C426.77 38.79 434.73 27.7 434.33 24.28C433.73 19.14 437.54 -7.76 455.81 12.16C474.08 32.08 481.31 58.16 484.32 68.02C486.33 74.59 488.87 88.35 491.95 109.29L497.77 140.51C499.24 144.75 500.85 150.84 502.59 158.78C504.33 166.72 501.45 170.9 493.96 171.31C476.69 178.43 468.12 190.68 468.26 208.07C468.39 225.45 464.8 243.7 457.48 262.8L448.82 297.52L435.66 351.73L364.3 579.55L358.62 590.11Z" id="dgX4R2w2E"></path></defs><g visibility="inherit"><g visibility="inherit"><g visibility="inherit"><g><use xlink:href="#dgX4R2w2E" opacity="1" fill-opacity="0" stroke="#aedeea" stroke-width="10" stroke-opacity="1"></use></g></g></g></g></svg>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   preserveAspectRatio="xMidYMid meet"
+   viewBox="0 0 327.79587 640.14044"
+   id="svg4607"
+   sodipodi:docname="mada-silhouette-2-thick.svg"
+   width="327.79587"
+   height="640.14044"
+   inkscape:version="0.92.0 r">
+  <metadata
+     id="metadata4611">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1389"
+     inkscape:window-height="855"
+     id="namedview4609"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.9734375"
+     inkscape:cx="139.70947"
+     inkscape:cy="320.05437"
+     inkscape:window-x="51"
+     inkscape:window-y="105"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4607" />
+  <defs
+     id="defs4595">
+    <path
+       d="m 358.62,590.11 -12.83,11.91 c -13.15,11.67 -28.44,20.9 -45.86,27.71 -17.43,6.8 -33.11,7.13 -47.05,0.97 -17.74,-8.43 -31.05,-19.77 -39.92,-34.03 -8.87,-14.26 -13.62,-31.67 -14.26,-52.25 -12.99,-27.39 -16.55,-54.61 -10.69,-81.67 5.86,-27.06 20.24,-56.47 43.13,-88.22 l 4.04,-20.91 c -2.06,-5.99 -6.97,-23.73 -14.73,-53.22 -11.64,-44.24 -3.57,-67.57 15.44,-89.93 12.68,-14.91 36.28,-28.6 70.81,-41.08 31.02,-15.01 52.34,-30.25 63.99,-45.72 17.46,-23.21 17.66,-37.79 23.29,-46.41 3.74,-5.75 9.23,-12.32 16.46,-19.72 16.33,-18.75 24.29,-29.84 23.89,-33.26 -0.6,-5.14 3.21,-32.04 21.48,-12.12 18.27,19.92 25.5,46 28.51,55.86 2.01,6.57 4.55,20.33 7.63,41.27 l 5.82,31.22 c 1.47,4.24 3.08,10.33 4.82,18.27 1.74,7.94 -1.14,12.12 -8.63,12.53 -17.27,7.12 -25.84,19.37 -25.7,36.76 0.13,17.38 -3.46,35.63 -10.78,54.73 l -8.66,34.72 -13.16,54.21 -71.36,227.82 z"
+       id="dgX4R2w2E"
+       inkscape:connector-curvature="0" />
+  </defs>
+  <g
+     visibility="inherit"
+     id="g4605"
+     style="visibility:inherit"
+     transform="translate(-180.29053,0.08607186)">
+    <g
+       visibility="inherit"
+       id="g4603"
+       style="visibility:inherit">
+      <g
+         visibility="inherit"
+         id="g4601"
+         style="visibility:inherit">
+        <g
+           id="g4599">
+          <use
+             xlink:href="#dgX4R2w2E"
+             id="use4597"
+             style="opacity:1;fill-opacity:0;stroke:#aedeea;stroke-width:10;stroke-opacity:1"
+             x="0"
+             y="0"
+             width="100%"
+             height="100%" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

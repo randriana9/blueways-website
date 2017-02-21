@@ -17,29 +17,32 @@ prepend content
                             hr
                         .form-body
                             form(action="/mail/member" method="POST")
-                                ul
-                                    li
+                                .row
+                                    .col-md-6
                                         label.form-requires-symbol(for="firstname") Fornavn
                                         input#name(type="text" name="firstname" required)
-                                    li
+                                    .col-md-6
                                         label.form-requires-symbol(for="lastname") Etternavn
                                         input#name(type="text" name="lastname" required)
-                                    li
+                                .row
+                                    .col-md-6
                                         label.form-requires-symbol(for="birthday") Fødselsdato
                                         input#name(type="text" name="birthday" required)
-                                    li
+                                    .col-md-6
                                         label.form-requires-symbol(for="address") Addresse
                                         input#name(type="text" name="address" required)
-                                    li
+                                .row
+                                    .col-md-6
                                         label.form-requires-symbol(for="city") Poststed
                                         input#name(type="text" name="city" required)
-                                    li
+                                    .col-md-6
                                         label.form-requires-symbol(for="zipcode") Postnummer
                                         input#name(type="text" name="zipcode" required)
-                                    li
+                                .row
+                                    .col-md-6
                                         label.form-requires-symbol(for="email") E-post
                                         input#email(type="email" name="email" required)
-                                    li
+                                    .col-md-6
                                         label(for="mobile") Mobil
                                         input#mobile(type="number" name="mobile")
                             

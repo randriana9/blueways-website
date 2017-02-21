@@ -45,17 +45,17 @@
 
 .intersection {
     background-color: $tertiary-color-darker;
-    height: 300px;
+    height: 100%;
+    padding: 5px 0;
     text-align: center;
     color: #fff;
 
     h2 {
-        font-size: 3em;
-        padding-top: 90px;
+        font-size: 8vw;
     }
 
     blockquote {
-        font-size: 1.5em;
+        font-size: 5vw;
         line-height: 1.5em;
     }
 }
@@ -63,16 +63,12 @@
 .projects-section {
     background: #fff;
 
-    .media-body {
-        padding-left: 50px;
-    }
-
    img {
-       max-width: 500px;
+       max-width: 100%;
    }
 
     .project-block {
-        padding: 100px 0;
+        padding: 50px 0;
         border-bottom: 2px solid $tertiary-color-darker;
         text-align: justify;
 
