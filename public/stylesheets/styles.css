@@ -8165,8 +8165,10 @@ body {
 .section-content {
   height: 100vh; }
 
-#second-section .section-content img {
-  height: 100%; }
+#second-section .section-content img:not(.like-icon) {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
 
 #second-section .section-A {
   padding: 0; }
