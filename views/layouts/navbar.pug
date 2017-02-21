@@ -1,4 +1,19 @@
-span.hamburger-menu
+nav(class=["navbar", "navbar-default", "navbar-fixed-top"])
+    .container-fluid
+        .navbar-header
+            button(type="button" class=["navbar-button","navbar-toggle", "collapsed"])
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            .navbar-brand
+                span.brand-name
+                    a(href="/") BLUEWAYS
+                .brand-image-container
+                    img.brand-logo-transparent(src="images/logo_white.png")
+                    img.brand-logo-normal(src="images/logo.png")
+                
+
 .navbar-overlay
     ul
         li: a(href="/") HJEM

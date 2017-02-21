@@ -45,8 +45,21 @@
 
         //navbar animation
         $(document).ready(function () {
-            $('.hamburger-menu').click(function() {
+            var overlayActive = false;
+
+            $('.navbar-button').click(function() {
                 $('.navbar-overlay').toggleClass('anim');
+                if(overlayActive) {
+                    overlayActive = false;
+                    /* don't add class if on first section */
+                    if(!$("body").hasClass("fp-viewing-0")){
+                        $("nav").addClass("transform-navbar");
+                    }
+                } else {
+                    overlayActive = true;
+                    $("nav").removeClass("transform-navbar");
+                }
+
             });
 
             $('.animation').click(function(){

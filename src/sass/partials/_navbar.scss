@@ -1,35 +1,107 @@
-.hamburger-menu {
-    z-index: 9999;
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    width: 35px;
-    height: 4px;
-    background: #ffffff;
-    cursor: pointer;
+.navbar-default {
+    @include transition(background-color, $transition-duration);
+    .navbar-header {
+        .navbar-button.navbar-toggle {
+            border: none;
+            z-index: 9999;
+            margin: 25px 25px 0;
+            @include transition(margin, $transition-duration);
 
-    &:before, &:after {
-    display: block;
-    position: absolute;
-    content: '';
-    left: 0;
-    height: 4px;
-    width: 35px;
-    background: #ffffff;
+            .icon-bar {
+                width: 30px;
+                height: 3px;
+                background-color: $primary-color;
+            }
+
+            &:focus, &:hover {
+                background-color: transparent;
+                .icon-bar {
+                    background-color: lighten($primary-color, 15%);
+                }
+            }
+        }
+
+        .navbar-brand {
+            margin-left: 0;
+            padding: 15px 30px;
+
+            .brand-name {
+                position: absolute;
+                top: 35px;
+                left: 105px;
+                font-size: 1.5em;
+                @include transition(all, $transition-duration);
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+            .brand-image-container {
+                height: 50px;
+                position: relative;
+
+                img {
+                    height: 125%;
+                    position: absolute;
+                    @include transition(all, $transition-duration);
+                }
+
+                .brand-logo-normal {
+                    opacity: 0;
+                    @include transition(all, $transition-duration);
+                }
+
+                .brand-logo-transparent {
+                    opacity: 1;
+                    @include transition(all, $transition-duration);
+                }
+            }
+        }
     }
+}
 
-    &:before {
-    top: -8px;
-    }
+.navbar-default.transform-navbar,
+.navbar-default.affix {
+    background: #fff;
 
-    &:after {
-    bottom: -8px;
+    .navbar-header {
+
+        .navbar-button.navbar-toggle {
+            margin: 15px;
+        }
+        .navbar-brand {
+            padding: 0 30px;
+            .brand-image-container {
+
+                img {
+                    height: 100%;
+                    top: 5px;
+                }
+                .brand-logo-normal {
+                    opacity: 1;
+                }
+                .brand-logo-transparent {
+                    opacity: 0;
+                }
+            }
+            .brand-name {
+                top: 20px;
+                left: 90px;
+                font-size: 1.3em;
+
+                a {
+                    color: $primary-color;
+                    text-decoration: none;
+                }
+            }
+        }
     }
 }
 
 .navbar-overlay {
     position: fixed;
-    z-index: 9998;
+    z-index: 1000;
     bottom: -99%;
     height: 100%;
     background: $primary-color-darker-transparent;
@@ -109,7 +181,6 @@
 }
 
 @-webkit-keyframes menu-anim {
-
     0% {
     right: 0;
     bottom: -99%;
@@ -137,8 +208,8 @@
     width: 100%;
     background: $primary-color-darker-transparent;
     }
-
 }
+
 
 
 /*.navbar-default {
