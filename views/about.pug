@@ -9,11 +9,11 @@ prepend content
     section#about
         .container
             .row
-                .col-md-6
+                .col-md-6.section-content
                     .section-header
                         h2 Om Organisasjonen
                     .section-body
-                        p
+                        p.
                             |Blueways er en ikke-for-profit basert organisasjon som gjennom
                             |sitt engasjement og flere konkrete prosjekter ønsker å bidra
                             |til å bekjempe fattigdom på Madagaskar. Organisasjonen ble
@@ -23,7 +23,13 @@ prepend content
                             |hovedsakelig finansiert av private donasjoner, gaver, innsamlinger
                             |og/eller frivillig innsats fra enkeltpersoner eller foretak.
                 .col-md-6
-                    //img(class=['image-about-section'] src="../images/image-kids.jpg" alt="Image kids Madagascar ")
+                    .carousel-container
+                        #carousel-slider.carousel.slide(data-ride="carousel")
+                            .carousel-inner(role="listbox" style="border: 4px solid black;")
+                                .item.active
+                                    img(src="../images/image-kids.jpg" alt="Madagascar dry land")
+                                .item
+                                    img(src="../images/image-kids.jpg" alt="Madagascar zebu")
     
     section#corevalues
         h2 Kjerneverdier

@@ -1,12 +1,16 @@
 #about {
     background-color: $tertiary-color;
-    height: 180vh;
+    padding-bottom: 50px;
 
    .image-about-section {
        height: 400px;
        margin-top: 30vh;
        margin-left: 55px;
        filter: sepia(70%);
+   }
+
+   .section-content {
+       height: 180vh;
    }
 }
 

@@ -34,7 +34,11 @@
     }
 
     #about {
-        height: 70vh;
+        height: 100vh;
+
+        .section-content {
+            height: 60vh;
+        }
     }
 
     #corevalues {

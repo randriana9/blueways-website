@@ -1,0 +1,89 @@
+@media (min-width: $screen-md-min) { 
+    .section-header {
+        height: 10vh;
+        width: 100%;
+        h2 {
+            font-size: 3em;
+        }
+    }
+    .section-body {
+        font-size: 1.5em;
+    }
+    .carousel-container {
+        margin-top: 20vh;
+    }
+
+    #third-section .section-content {
+        height: 60vh;
+        img {
+            top: 5vh;
+            left: 25%;
+        }
+    }
+
+    #about {
+        height: 60vh;
+    }
+
+    #misc-projects {
+        padding: 5vh 0;
+    }
+
+    #vision {
+        h2 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+    }
+
+    .intersection {
+        h2 {
+            font-size: 2em;
+        }
+        blockquote {
+            font-size: 1.5em;
+        }
+    }
+
+    #supportpage {
+        .section-body {
+            p.upper {
+                margin: 10px;
+                font-size: 1em;
+                text-align: justify;
+                font-weight: 500;
+            }
+        }
+        .col-md-6:first-child {
+            padding: 0 20px;
+        }
+        .col-md-6:last-child {
+            p {
+                font-size: 1.5em;
+            }
+
+            img {
+                top: 10vh;
+                width: 70%;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            .content {
+                table {
+                    th {
+                        font-size: 2em;
+                    }
+                    td {
+                        font-size: 2.5em;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
