@@ -1,0 +1,109 @@
+@media (min-width: $screen-sm-min) { 
+    #second-section .section-B .image-overlay {
+        font-size: 5vw;
+        padding: 25% 10%;   
+    }
+
+    #second-section .section-A .image-overlay {
+        font-size: 4.5vw;
+        padding: 10%;
+    }
+
+    #third-section .section-content {
+        height: 70vh;
+
+        img {
+            top: 5vh;
+            left: 25%;
+        }
+    }
+
+    .section-header {
+        height: 15vh;
+        width: 60vw;
+        margin: 0 auto;
+        h2 {
+            font-size: 5vw;
+        }
+    }
+
+    .section-body {
+        font-size: 3vw;
+        padding: 30px 50px; 
+        text-align: justify;
+    }
+
+    #about {
+        height: 70vh;
+    }
+
+    #corevalues {
+        h2 {
+            font-size: 5vw;
+            padding: 3% 0;
+        }
+        p {
+            font-size: 4vw;
+        }
+    }
+
+    #vision {
+        h2 {
+            font-size: 5vw;
+            padding: 8px;
+        }
+
+        p {
+            font-size: 3vw;
+            margin: 20px 30px 80px;
+        }
+    }
+
+    .intersection {
+        h2 {
+            font-size: 5vw;
+        }
+        blockquote {
+            font-size: 3vw;
+        }
+    }
+
+    #contact-body .form-container .form-container-body {
+        max-width: 550px; 
+    }
+
+    #supportpage {
+        .section-body {
+            p.upper {
+                margin: 10px;
+                font-size: 2.4vw;
+                text-align: center;
+                font-weight: 500;
+            }
+        }
+        .col-md-6:last-child {
+            p {
+                font-size: 3vw;
+            }
+
+            img {
+                top: 0vh;
+                width: 50vw;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            .content {
+                table {
+                    th {
+                        font-size: 4vw;
+                    }
+                    td {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+ }

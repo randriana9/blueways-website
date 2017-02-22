@@ -118,6 +118,8 @@ body {
     h2 {
         position: absolute;
         bottom: 0;
+        width: 100%;
+        text-align: center;
         color: $primary-color;
         font-size: 9vw;
     }
@@ -249,10 +251,6 @@ footer {
 
     .col-md-6:first-child {
         border-right: 4px solid $tertiary-color-darker;
-    }
-
-    .col-md-6 {
-        margin: 65px 0;
     }
 
     .col-md-6:last-child {
