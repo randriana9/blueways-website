@@ -2,22 +2,18 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-  res.render('index', {greier: "tekxt"});
-})
-
-router.get('/error', function(req, res, next) {
-  res.render('error', { data: res});
+  res.render('lang-en/index-en');
 })
 
 router.get('/about', function(req, res, next) {
-  res.render('about');
+  res.render('lang-en/about-en');
 })
 
 router.get('/projects', function(req, res, next) {
-  res.render('projects');
+  res.render('lang-en/projects-en');
 })
 
-router.get('/contact', function(req, res, next) {
+/*router.get('/contact', function(req, res, next) {
   res.render('contact');
 })
 
@@ -39,6 +35,6 @@ router.get('/contactresponse', function(req, res, next) {
 
 router.get('/member-response', function(req, res, next) {
   res.render('member-response');
-})
+})*/
 
 module.exports = router;

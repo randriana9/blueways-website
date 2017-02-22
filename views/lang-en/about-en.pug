@@ -1,0 +1,71 @@
+extends ../layouts/base.pug
+block variables
+    - var lang = 'EN'
+prepend content
+    header
+        .image-header
+            img#biImage-1(src="../images/poor-boy.jpeg")
+            img#biImage-2(src="../images/hands.jpeg")
+        hr.headerhr-primary
+    section#about
+        .container
+            .row
+                .col-md-6.section-content
+                    .section-header
+                        h2 About the organisation
+                    .section-body
+                        p.
+                            Blueways is a non-profit organization who, through commitment and several 
+                            specific projects, wants to combat poverty in Madagascar. The organization 
+                            was formed in 2016 by a number of dedicated enthusiasts, and consists of 
+                            volunteer members with a variety of skills that are essential to the 
+                            organization's projects and visions. All projects are mainly funded by private 
+                            donations, gifts, collections and / or volunteer efforts of individuals or enterprises.
+
+                .col-md-6
+                    .carousel-container
+                        #carousel-slider.carousel.slide(data-ride="carousel")
+                            .carousel-inner(role="listbox" style="border: 4px solid black;")
+                                .item.active
+                                    img(src="../images/image-kids.jpg" alt="Madagascar dry land")
+                                .item
+                                    img(src="../images/image-kids.jpg" alt="Madagascar zebu")
+    
+    section#corevalues
+        h2 Core values
+        p <i>Commitment - Compassion - Solidarity </i>
+
+    section#vision
+        .container
+            h2 Vision
+            p 
+                | <i> We want to help Madagascar to get out of poverty.
+                | We want welfare for the urban population as well as people from the countryside. 
+                | We want them to be happy and to be able to stand on their own feet.  
+                | Our aim is that all Malagasy people should be proud of their respective cultural 
+                | identities, languages, cultures and traditions.</i>
+            hr
+            h2 Engagement
+            .row
+                .col-sm-4
+                    .thumbnail    
+                        img(src="../images/uniform-children.jpg" alt="Uniform children")
+                        span
+                            | <b>IDENTITY:</b> One must know ones own identity in order to evolve. 
+                            | Promotion of Malagasy culture and language is one of our key focus areas.
+                .col-sm-4
+                    .thumbnail
+                        img(src="../images/hand.jpg" alt="Madagascar dry land")
+                        span
+                            | <b>INDEPENDENCE:</b> We will provide equipment and training to help enable 
+                            | farmers to become self-sufficient in access to water. 
+                            | This will help them considerably to become economically independent, as 
+                            | access to clean water is at present very expensive.
+                .col-sm-4
+                    .thumbnail
+                        img(src="../images/effectivity.jpg" alt="Madagascar dry land")
+                        span
+                            | <b>EFFICIENCY:</b> The efficiency of farmers and agriculture is also a major 
+                            | focus for us. We will contribute with knowledge of new methods, as well as 
+                            | simple but effective equipment.
+        

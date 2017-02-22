@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/routes');
+var routes_en = require('./routes/routes-en');
 var mail = require('./routes/mail.router');
 
 var app = express();
@@ -24,9 +25,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/en', express.static(path.join(__dirname, 'public')));
 app.use('/mail', express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/en', routes_en);
 app.use('/mail', mail);
 
 // catch 404 and forward to error handler

@@ -1,39 +1,38 @@
-extends ./layouts/base.pug
+extends ../layouts/base.pug
 block variables
-    - var lang = 'NO'
+    - var lang = 'EN'
+
 block content 
     #fullpage
         #hero-section.section
-            span SAMMEN GJØR VI EN FORSKJELL
+            span TOGETHER WE MAKE A DIFFERENCE
         #second-section.section.fp-auto-height-responsive
             .container-fluid
                 .row
                     div(class=['col-sm-6', 'section-content', 'section-B'])
                         a(href='/projects')
                             img(src="images/school-image.jpeg" alt="kids at school")
-                            .image-overlay Blueways vil gjennom flere prosjekter bidra til å bekjempe fattigdom på Madagaskar.
+                            .image-overlay Blueways will, through various projects, help to fight poverty in Madagascar.
 
                     div(class=['col-sm-6', 'section-content', 'section-A'])
                         a(href='/support')
                             img(src="images/children.jpg" alt="kids having fun")
                             .image-overlay
                                 img.like-icon(src="images/like.png" alt="thumbs up")
-                                | INGEN KAN GJØRE ALT, MEN ALLE KAN GJØRE LITT!
+                                | NO ONE CAN DO EVERYTHING, BUT EVERYONE CAN DO SOMETHING!
 
         #third-section.section.fp-auto-height-responsive
             .container
                 .row
                     div(class=['col-md-6', 'section-content'])
                         .section-header
-                            h2 Litt om Madagascar
+                            h2 A bit about Madagascar
                         .section-body
                             p.
-                                Madagaskar ligger ca. 400 kilometer øst for Afrikas sørøstlige kyst og er verdens fjerde største øy.
-                                Om lag 80 prosent av dyre- og planteartene på Madagaskar  finnes ikke andre steder i verden.
-                                Befolkningen er på ca. 22 millioner innbyggere. 
-                                På tross av at Madagaskar er rikt på naturressurser, er landets innbyggere blant verdens fattigste.
-                                Rundt 80 prosent av den yrkesaktive befolkningen er sysselsatt i jordbrukssektoren.
-                                Jordbruk og kvegdrift danner det viktigste inntektsgrunnlaget for størstedelen av befolkningen.
+                                Madagascar is located about 400 kilometers east of Africa's southeastern coast and is the world's fourth largest island, with approximately 22 million inhabitants.
+                                Around 80 percent of animal and plant species found in Madagascar cannot be found anywhere else in the world.
+                                Despite the fact that Madagascar is rich in natural resources, the country's population is among the world's poorest. 
+                                About 80 percent of the working population is employed in agricultural sector; agriculture and ranching form the main income for most of the population.
                         img(src="../images/mada-silhouette-2-thick.svg")
                     .col-md-6
                         .carousel-container
@@ -43,36 +42,35 @@ block content
                                         img(src="../images/mada-dry.jpg" alt="Madagascar dry land")
                                     .item
                                         img(src="../images/mada-zebu.jpg" alt="Madagascar zebu")
-                            p Vannmangel er et stort problem, særlig for bønder på Madagaskar.
-
+                            p Water scarcity is a major problem in Madagascar, especially for farmers.
         #misc-projects.section.fp-auto-height-responsive
             .container-fluid
-                h2 Våre øvrige prosjekter
+                h2 Our projects
                 .row
                     .col-md-3.col-sm-6
                         .thumbnail
                             a(href="/projects#waterpump")
                                 img.grow.revealAnimation(src="../images/mada-dry-2.jpg" alt="Madagascar dry land")
-                                h3 IRRIGASJON
+                                h3 IRRIGATION
                     
                     .col-md-3.col-sm-6
                         .thumbnail
                             a(href="/projects#rice")
                                 img.grow.revealAnimation(src="../images/rice-field.jpeg" alt="Rice field")
-                                h3 RISPLANTING
+                                h3 PLANTING RICE
 
                     .col-md-3.col-sm-6
                         .thumbnail
                             a(href="/projects#clean-water")
                                 img.grow.revealAnimation(src="../images/hero-image-2.jpg" alt="Children")
-                                h3 RENT DRIKKEVANN
+                                h3 CLEAN DRINKING WATER
                             
                     .col-md-3.col-sm-6
                         .thumbnail
                             a(href="/projects#identity")
                                 img.grow.revealAnimation(src="../images/kids-identity.jpg" alt="Children")
-                                h3 IDENTITET
+                                h3 IDENTITY
             
         .section.fp-auto-height
             //- must include footer in index to integrate it with fullpage.js
-            include ./layouts/footer.pug
+            include ../layouts/footer.pug
