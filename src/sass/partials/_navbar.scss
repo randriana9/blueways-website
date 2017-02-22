@@ -1,6 +1,48 @@
 .navbar-default {
     @include transition(background-color, $transition-duration);
     .navbar-header {
+        .language-bar {
+            position: relative;
+            float:  right;
+            margin-top: 30px;
+            font-size: 1.3em;
+            font-weight: 500;
+            @include transition(margin-top, $transition-duration);
+
+            a.dropdown-button {
+                color: $primary-color;
+            }
+
+            a:not(.dropdown-button) {
+                color: #fff;
+                padding: 10px 15px;
+
+                &:hover {
+                    background-color: transparent;
+                    color: darken($tertiary-color-darker, 30%);
+                }
+            }
+        }
+        .dropdown-menu {
+            display: inline-block;
+            left: -13px;
+            background-color: $primary-color;
+            min-width: 0;
+            border-radius: 25px;
+            opacity: 0;
+            transform: translateY(-150%);
+            transition: all 0.5s ease;
+            
+            a {
+                color: #fff;
+            }
+
+            &.show-dropdown {
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+
         .navbar-button.navbar-toggle {
             border: none;
             z-index: 9999;
@@ -63,12 +105,16 @@
 
 .navbar-default.transform-navbar,
 .navbar-default.affix {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
 
     .navbar-header {
 
+        .language-bar {
+            margin-top: 20px;
+        }
+
         .navbar-button.navbar-toggle {
-            margin: 15px;
+            margin: 15px 25px;
         }
         .navbar-brand {
             padding: 0 30px;
@@ -76,7 +122,7 @@
 
                 img {
                     height: 100%;
-                    top: 5px;
+                    top: 10px;
                 }
                 .brand-logo-normal {
                     opacity: 1;
@@ -86,7 +132,7 @@
                 }
             }
             .brand-name {
-                top: 20px;
+                top: 25px;
                 left: 90px;
                 font-size: 1.3em;
 
@@ -207,8 +253,6 @@
     background: $primary-color-darker-transparent;
     }
 }
-
-
 
 /*.navbar-default {
     @include transition(background-color, $transition-duration);

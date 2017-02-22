@@ -25,7 +25,7 @@
 
             /* changing the slideselector to avoid conflict with bootstrap's carousel */
             slideSelector: '.fullpage-slide',
-            responsiveWidth: '1050'
+            responsiveWidth: '1200'
         });
 
 
@@ -35,26 +35,19 @@
 
         //navbar animation
         $(document).ready(function () {
-            var overlayActive = false;
 
             $('.navbar-button').click(function() {
                 $('.navbar-overlay').toggleClass('anim');
-                if(overlayActive) {
-                    overlayActive = false;
-                    /* don't add class if on first section */
-                    if(!$("body").hasClass("fp-viewing-0")){
-                        $("nav").addClass("transform-navbar");
-                    }
-                } else {
-                    overlayActive = true;
-                    $("nav").removeClass("transform-navbar");
-                }
-
             });
 
             $('.animation').click(function(){
                 $('.anim').toggleClass('reverse-animation');
             })
+
+            /* code for language bar dropdown */
+            $('.dropdown-button').click(function() {
+                $('.dropdown-menu').toggleClass('show-dropdown');
+            });
         });
     });
 
@@ -94,6 +87,8 @@
             $('#biImage-2').hide();
         }
     })
+
+    
 
     /* scrollreveal */
     window.sr = ScrollReveal();
