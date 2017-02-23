@@ -38,11 +38,8 @@
 
             $('.navbar-button').click(function() {
                 $('.navbar-overlay').toggleClass('anim');
+                $('.icon-bar').toggleClass('active');
             });
-
-            $('.animation').click(function(){
-                $('.anim').toggleClass('reverse-animation');
-            })
 
             /* code for language bar dropdown */
             $('.dropdown-button').click(function() {

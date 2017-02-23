@@ -1,0 +1,77 @@
+extends ../layouts/base.pug
+block variables
+    - var lang = 'FR'
+prepend content
+    .video-header
+        video(playsinline autoplay muted loop)
+            source(src='../videos/waterpump.mp4', type='video/mp4')
+        p Pompe à eau
+        a(href='#waterpump') PLUS D'INFOS
+    .intersection
+        h2 Voies hors de la pauvreté
+        blockquote
+            | “Si tu donnes un poisson à un homme, il mangera un jour. 
+            | Si tu lui apprends à pêcher, il mangera toujours” 
+            br
+            | - Lao Tseu
+    .projects-section
+        .container
+            #waterpump.project-block
+                .row
+                    .col-md-6
+                        img(src='../images/mada-dry-2.jpg', alt='Madagascar dry land' class=["reveal"])
+                    .col-md-6
+                        h3 IRRIGATION
+                        p.
+                            La pénurie d'eau est un problème majeur à Madagascar, en particulier pour les agriculteurs.
+                            La courte saison des pluies ne fournit pas assez d'eau pour l'agriculture.
+                            Dans les hautes terres, les zones irriguées constituent plus de la moitié des 
+                            terres cultivées. La seconde moitié est infertile en raison de peu ou pas d'accès d'eau.
+                            
+                        p.
+                            En coopération avec des entreprises locales, Blueways va développer des pompes à eau 
+                            d'énergie libre. Les pompes vont aider les agriculteurs à être en mesure de distribuer
+                            de l'eau dans les zones sèches. C’est un type de pompe qui ne nécessite aucune autre
+                            source d'énergie que l'énergie cinétique de l'eau d'une rivière.
+            #rice.project-block
+                .row
+                    .col-md-6
+                        img(src='../images/rice-planting.png', alt='rice planting' class=["reveal"])
+                    .col-md-6
+                        h3 PLANTATION DE RIZ
+                        p.
+                            Madagascar est un pays agricole. Environ la moitié de la superficie cultivée 
+                            est une surface cultivée en riz. D’où la culture est plus ou moins une monoculture rizicole.
+                            La plantation du riz exige un travail physique et demande beaucoup de temps. 
+                            Pendant la période de plantation, beaucoup de gens doivent être dans les rizières 
+                            journalièrement. Ce sont surtout les femmes et les enfants.
+                        p.
+                            En coopération avec l'expertise locale, Blueways développera une méthode à planter 
+                            le riz qui simplifiera et améliorera l'efficacité de la plantation. Une telle machine 
+                            ne nécessite qu'une seule personne. De ce fait, le travail ne mobilisera plus le temps 
+                            et l'énergie d'une douzaine de personnes. Les enfants, par exemple, pourront aller à l'école.
+            #clean-water.project-block
+                .media
+                    .col-md-6
+                        img(src='../images/kids-water.jpg', alt='children playing with water' class=["reveal"])
+                    .col-md-6
+                        h3 EAU POTABLE
+                        p.
+                            Le manque d'eau potable a un impact négatif sur l’éducation et la sécurité alimentaire, 
+                            en particulier pour les agriculteurs. L'un des projets de Blueways est de développer un 
+                            système qui sera capable de distiller de l'eau pour boire. Le système sera alimenté par 
+                            l'énergie solaire. La conception du système sera facile et peu coûteux à produire de sorte
+                            que même les petits ateliers locaux malgaches seront en mesure de produire.
+                            L'objectif est que la population rurale ait continuellement accès à l'eau potable.
+            #identity.project-block
+                .media
+                    .col-md-6
+                        img(src='../images/kids-identity.jpg', alt='Children' class=["media-object", "reveal"])
+                    .col-md-6
+                        h3 IDENTITÉ
+                        p
+                            i “Si on ne sait pas d’où on vient, on ne sait pas où on va”
+                            |  ,
+                            |               Citation de Gisèle Rabesahala. Malgré le fait que Madagascar soit riche en cultures
+                            | et traditions, la plupart des Malgaches sont malheureusement moins fiers de leur identité. Blueways
+                            | encouragera le peuple malgache à mieux connaître leur propre identité, culture et langue.

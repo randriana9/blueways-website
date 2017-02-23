@@ -11,6 +11,10 @@
 
             a.dropdown-button {
                 color: $primary-color;
+                &:hover {
+                    text-decoration: none;
+                    color: lighten($primary-color, 15%);
+                }
             }
 
             a:not(.dropdown-button) {
@@ -53,6 +57,11 @@
                 width: 30px;
                 height: 3px;
                 background-color: $primary-color;
+                @include transition(background-color, $transition-duration);
+
+                &.active {
+                    background-color: lighten($primary-color, 15%);
+                }
             }
 
             &:focus, &:hover {

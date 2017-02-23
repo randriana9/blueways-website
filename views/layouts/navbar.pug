@@ -10,12 +10,14 @@ nav(class=["navbar", "navbar-default", "navbar-fixed-top"])
                 a(href="#" class="dropdown-button") #{lang}
                 ul.dropdown-menu
                     li: a(href="/en") EN
-                    li: a(href="/") FR
+                    li: a(href="/fr") FR
                     li: a(href="/") NO
             .navbar-brand
                 span.brand-name
                     if lang == "EN"
                         a(href="/en") BLUEWAYS
+                    else if lang == "FR"
+                        a(href="/fr") BLUEWAYS
                     else
                         a(href="/") BLUEWAYS
                 .brand-image-container
@@ -31,7 +33,14 @@ nav(class=["navbar", "navbar-default", "navbar-fixed-top"])
             li: a(href="/en/projects") OUR PROJECTS
             li: a(href="/en/contact") CONTACT
             li: a(href="/en/member") BECOME A MEMBER
-            li: a(class="/en/support-us" href="/support") YOUR SUPPORT
+            li: a(href="/en/support") YOUR SUPPORT
+        else if lang == "FR"
+            li: a(href="/fr") ACCUEIL
+            li: a(href="/fr/about") SUR NOUS
+            li: a(href="/fr/projects") NOS PROJETS
+            li: a(href="/fr/contact") CONTACT
+            li: a(href="/fr/member") DEVENEZ MEMBRE
+            li: a(href="/fr/support") FAIRE UN DON
         else
             li: a(href="/") HJEM
             li: a(href="/about") OM OSS

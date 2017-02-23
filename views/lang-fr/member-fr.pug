@@ -1,0 +1,50 @@
+extends ../layouts/base.pug
+block variables
+    - var lang = 'FR'
+prepend content
+    header
+        .image-header
+            img(src="../images/man.jpg")
+    .headerhr-primary
+    #contact-body
+        .container
+            .form-container
+                .form-container-header
+                    h1 DEVENEZ MEMBRE DE BLUEWAYS
+                .form-container-body
+                    .form-layout
+                        .form-header
+                            h2 DEVENER MEMBRE
+                            hr
+                        .form-body
+                            form(action="/mail/member" method="POST")
+                                .row
+                                    .col-md-6
+                                        label.form-requires-symbol(for="firstname") Prénom
+                                        input#name(type="text" name="firstname" required)
+                                    .col-md-6
+                                        label.form-requires-symbol(for="lastname") Nom
+                                        input#name(type="text" name="lastname" required)
+                                .row
+                                    .col-md-6
+                                        label.form-requires-symbol(for="birthday") Date de naissance
+                                        input#name(type="text" name="birthday" required)
+                                    .col-md-6
+                                        label.form-requires-symbol(for="address") Adresse
+                                        input#name(type="text" name="address" required)
+                                .row
+                                    .col-md-6
+                                        label.form-requires-symbol(for="city") Ville
+                                        input#name(type="text" name="city" required)
+                                    .col-md-6
+                                        label.form-requires-symbol(for="zipcode") Code postal
+                                        input#name(type="text" name="zipcode" required)
+                                .row
+                                    .col-md-6
+                                        label.form-requires-symbol(for="email") Email
+                                        input#email(type="email" name="email" required)
+                                    .col-md-6
+                                        label(for="mobile") Telephone
+                                        input#mobile(type="number" name="mobile")
+                            
+                                input#submitbutton(type="submit" value="Envoyer")
