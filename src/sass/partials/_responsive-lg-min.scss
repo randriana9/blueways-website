@@ -43,15 +43,24 @@
     }
 
     #supportpage {
+
+        .col-md-6:first-child {
+            margin: 5vh 0;
+        }
         .section-header {
-            height: 15vh;
+            height: 60px;
         }
         .section-body {
-            margin: 20px;
+            margin: 30px 40px;
+            font-size: 1.7em;
              p.upper {
                 margin: 20px 0;
                 text-align: left;
              }
+        }
+        .partner-logo {
+            max-width: 250px;
+            margin: 30px 20px;
         }
     }
 }

@@ -1,3 +1,115 @@
 extends ./layouts/base.pug
-
+block variables
+    - var lang = 'NO'
 prepend content
+    #news
+        header
+            h1 Nyheter
+        hr.headerhr-primary
+        img(src=("../images/triangle-tertiary-darker.svg") class=["triangle", "center-block"])
+        .container
+            .row
+                .col-sm-6.col-md-4.news-container
+                    .thumbnail
+                        .carousel-container
+                            #carousel-slider.carousel.slide(data-ride="carousel" data-interval="5000")
+                                .carousel-inner(role="listbox")
+                                    .item.active
+                                        img(src="../images/news/barnehjem1.jpeg")
+                                    each val in [2,3,4,5,6,7]
+                                        .item
+                                            img(src="../images/news/barnehjem"+val+".jpeg")
+                        .caption
+                            h3 Tafita barnehjemmet
+                            i (Antananarivo des. 2016)
+                            p En Blueways medlem har arbeidet frivillig i Tafita
+                                |barnehjemmet, i Antananarivo desember 2016. Hun lærte
+                                |barna litt om norsk kultur og om hvordan livet er i Norge.
+                                |Barna fikk også lære norske leker og sanger.  På slutten av
+                                |hennes opphold delte hun klær og leker til barna, noe som de satt veldig stor pris på.
+                .col-sm-6.col-md-4.news-container
+                    .thumbnail
+                        .carousel-container
+                            #carousel-slider.carousel.slide(data-ride="carousel")
+                                .carousel-inner(role="listbox")
+                                    .item.active
+                                        img(src="../images/news/water1.jpeg")
+                                    each val in [2,3,4,5,6]
+                                        .item
+                                            img(src="../images/news/water"+val+".jpeg")
+                        .caption
+                            h3 Vannpumpeprosjektet
+                            i (Tsironomandidy nov. 2016)
+                            p Blueways under befaring av pumpe installasjonsområde sammen med lokale myndigheter.
+                .col-sm-6.col-md-4.news-container
+                    .thumbnail
+                        .carousel-container
+                            #carousel-slider.carousel.slide(data-ride="carousel" data-interval="5000")
+                                .carousel-inner(role="listbox")
+                                    .item.active
+                                        img(src="../images/news/skolebenk1.jpeg")
+                                    each val in [2,3,4,5,6,7,8]
+                                        .item
+                                            img(src="../images/news/skolebenk"+val+".jpeg")
+                        .caption
+                            h3 Marolaona
+                            i (Tsironomandidy nov. 2016)
+                            p
+                                |Blueways vil gjerne rette stor takk til alle som bidro ved å
+                                |kjøpe toalettpapir og donerte under aksjonen september 2016.
+                                |Med nye skolebenker og  -pulter har barna ved Marolaona
+                                |barneskole i dag sunne og komfortable skolehverdager.
+                .col-sm-6.col-md-4.news-container
+                    .thumbnail
+                        img(src="images/image.jpeg")
+                        .caption
+                            h3 Vannpumpeprosjektet
+                            i (Bergen okt. 2016)
+                            p Vi har laget ferdig og testet vanndrevet vannpumpe prototypen
+                            |i uke 40. Testresultaten viste at pumpen kan pumpe
+                            |18liter/min vann (26.000liter/døgn) til 80 metershøyde.
+                            |Neste steget er å produsere 3stk identiske pumper lokalt på
+                            |Madagaskar. Pumpene skal deretter installeres i en pilotprosjekt landsby.
+                .col-sm-6.col-md-4.news-container
+                    .thumbnail
+                        img(src="images/news/dorull.jpeg")
+                        .caption
+                            h3 Dugnad - Salg av doruller
+                            i (Bergen sep. 2016)
+                            p Vi hadde salgsdugnad av doruller og tørkeruller i uke 37.
+                                |Inntekten skal gå til anskaffelse av skolepulter og -benker til en skole på Madagaskar.
+                                |Vi retter en stor takk til de frivillige som har gjort en kjempe innsats.
+                .col-sm-6.col-md-4.news-container
+                    .thumbnail
+                        .carousel-container
+                            #carousel-slider.carousel.slide(data-ride="carousel" data-interval="5000")
+                                .carousel-inner(role="listbox")
+                                    .item.active
+                                        img(src="../images/news/pant1.jpeg")
+                                    .item
+                                        img(src="../images/news/pant2.jpeg")
+                        .caption
+                            h3 Dugnad - Panting av flasker
+                            i (Bergen aug. 2016)
+                            p Blueways gjennomførte en dugnadsarbeid ved å samle og pante
+                                |tomme flasker uke 32.
+                                |Det var en svært vellykket dugnad. Stor takk til de frivillige for
+                                |deres stor lagånd  innsats og engasjement.
+                .col-sm-6.col-md-4.news-container
+                    .thumbnail
+                        .carousel-container
+                            #carousel-slider.carousel.slide(data-ride="carousel" data-interval="5000")
+                                .carousel-inner(role="listbox")
+                                    .item.active
+                                        img(src="../images/news/vask1.jpeg")
+                                    each val in [2,3]
+                                        .item
+                                            img(src="../images/news/vask"+val+".jpeg")
+                        .caption
+                            h3 Dugnad - Nedvask
+                            i (Bergen jul. 2016)
+                            p Blueways gjennomførte en nedvask dugnadsarbeid i en
+                                |barnehage i Bergen 22. juli - 24 juli 2016.
+                                |Inntekten skal gå til  forberedlse av skolestart  for elever ved
+                                |en fattig barneskole på Madagaskar.
+                
