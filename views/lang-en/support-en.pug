@@ -1,0 +1,39 @@
+extends ../layouts/base.pug
+block variables
+    - var lang = 'EN'
+prepend content
+    header
+        .image-header
+            img(src="../images/support.jpeg")
+        hr.headerhr-primary
+        img(src=("../images/triangle-tertiary-darker.svg") class=["triangle", "center-block"])
+    #supportpage
+        .container-fluid
+            .row
+                .col-md-6
+                    .section-header
+                        h2 SUPPORT US
+                    .section-body
+                        p.upper
+                            |<i>YOUR SUPPORT IS OF GREAT IMPORTANCE TO THE IMPLEMENTATION OF OUR PROJECTS</i>
+                        p
+                            |Blueways is dependent on external support, both from individuals as well as 
+                            |organizations and companies. Your support can come in the form of gifts or financial donations.
+                            |Your support, regardless of its shape or size, will help finance our projects.
+                            |Rest assured that your support will make a difference to the lives of poor people in Madagascar!
+
+                .col-md-6
+                    img(src="../images/heart-2.svg")
+                    .content
+                        p MONETARY DONATIONS CAN BE SENT TO THE FOLLOWING ACCOUNT:
+                        table
+                            tr
+                                th Account no:
+                                th Vipps no:
+                            tr
+                                td 1503.77.79420
+                                td 25009
+                        p We are very grateful for your support and contributions
+                        span THANK YOU!
+                            
+                    

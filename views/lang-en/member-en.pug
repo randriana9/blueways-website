@@ -1,6 +1,6 @@
-extends ./layouts/base.pug
+extends ../layouts/base.pug
 block variables
-    - var lang = 'NO'
+    - var lang = 'EN'
 prepend content
     header
         .image-header
@@ -10,41 +10,41 @@ prepend content
         .container
             .form-container
                 .form-container-header
-                    h1 BLI MEDLEM I BLUEWAYS
+                    h1 BECOME A MEMBER OF BLUEWAYS
                 .form-container-body
                     .form-layout
                         .form-header
-                            h2 BLI MEDLEM
+                            h2 BECOME A MEMBER
                             hr
                         .form-body
                             form(action="/mail/member" method="POST")
                                 .row
                                     .col-md-6
-                                        label.form-requires-symbol(for="firstname") Fornavn
+                                        label.form-requires-symbol(for="firstname") Firstname
                                         input#name(type="text" name="firstname" required)
                                     .col-md-6
-                                        label.form-requires-symbol(for="lastname") Etternavn
+                                        label.form-requires-symbol(for="lastname") Lastname
                                         input#name(type="text" name="lastname" required)
                                 .row
                                     .col-md-6
-                                        label.form-requires-symbol(for="birthday") Fødselsdato
+                                        label.form-requires-symbol(for="birthday") Birthday
                                         input#name(type="text" name="birthday" required)
                                     .col-md-6
-                                        label.form-requires-symbol(for="address") Addresse
+                                        label.form-requires-symbol(for="address") Address
                                         input#name(type="text" name="address" required)
                                 .row
                                     .col-md-6
-                                        label.form-requires-symbol(for="city") Poststed
+                                        label.form-requires-symbol(for="city") City
                                         input#name(type="text" name="city" required)
                                     .col-md-6
-                                        label.form-requires-symbol(for="zipcode") Postnummer
+                                        label.form-requires-symbol(for="zipcode") Postal code
                                         input#name(type="text" name="zipcode" required)
                                 .row
                                     .col-md-6
-                                        label.form-requires-symbol(for="email") E-post
+                                        label.form-requires-symbol(for="email") Email
                                         input#email(type="email" name="email" required)
                                     .col-md-6
-                                        label(for="mobile") Mobil
+                                        label(for="mobile") Cell phone
                                         input#mobile(type="number" name="mobile")
                             
-                                input#submitbutton(type="submit" value="Send skjema")
+                                input#submitbutton(type="submit" value="Send")

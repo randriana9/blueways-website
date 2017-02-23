@@ -1,5 +1,6 @@
 extends ./layouts/base.pug
-
+block variables
+    - var lang = 'NO'
 prepend content
     .video-header
         video(playsinline autoplay muted loop)

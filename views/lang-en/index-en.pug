@@ -1,7 +1,6 @@
 extends ../layouts/base.pug
 block variables
     - var lang = 'EN'
-
 block content 
     #fullpage
         #hero-section.section
@@ -10,12 +9,12 @@ block content
             .container-fluid
                 .row
                     div(class=['col-sm-6', 'section-content', 'section-B'])
-                        a(href='/projects')
+                        a(href='/en/projects')
                             img(src="images/school-image.jpeg" alt="kids at school")
                             .image-overlay Blueways will, through various projects, help to fight poverty in Madagascar.
 
                     div(class=['col-sm-6', 'section-content', 'section-A'])
-                        a(href='/support')
+                        a(href='/en/support')
                             img(src="images/children.jpg" alt="kids having fun")
                             .image-overlay
                                 img.like-icon(src="images/like.png" alt="thumbs up")
@@ -49,25 +48,25 @@ block content
                 .row
                     .col-md-3.col-sm-6
                         .thumbnail
-                            a(href="/projects#waterpump")
+                            a(href="/en/projects#waterpump")
                                 img.grow.revealAnimation(src="../images/mada-dry-2.jpg" alt="Madagascar dry land")
                                 h3 IRRIGATION
                     
                     .col-md-3.col-sm-6
                         .thumbnail
-                            a(href="/projects#rice")
+                            a(href="/en/projects#rice")
                                 img.grow.revealAnimation(src="../images/rice-field.jpeg" alt="Rice field")
                                 h3 PLANTING RICE
 
                     .col-md-3.col-sm-6
                         .thumbnail
-                            a(href="/projects#clean-water")
+                            a(href="/en/projects#clean-water")
                                 img.grow.revealAnimation(src="../images/hero-image-2.jpg" alt="Children")
                                 h3 CLEAN DRINKING WATER
                             
                     .col-md-3.col-sm-6
                         .thumbnail
-                            a(href="/projects#identity")
+                            a(href="/en/projects#identity")
                                 img.grow.revealAnimation(src="../images/kids-identity.jpg" alt="Children")
                                 h3 IDENTITY
             

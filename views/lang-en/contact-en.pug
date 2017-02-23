@@ -1,6 +1,6 @@
-extends ./layouts/base.pug
+extends ../layouts/base.pug
 block variables
-    - var lang = 'NO'
+    - var lang = 'EN'
 prepend content
     header
         .image-header
@@ -10,31 +10,31 @@ prepend content
         .container
             .form-container
                 .form-container-header
-                    h1 KONTAKT OSS
-                    p Ta gjerne kontakt dersom du ønsker å vite mer om oss, våre prosjekter eller om du har andre henvendelser.
+                    h1 CONTACT US
+                    p Please contact us if you would like to know more about us, our projects, or if you have any other inquiries.
                 .form-container-body
                     .form-layout
                         .form-header
-                            h2 KONTAKT OSS
+                            h2 CONTACT US
                             hr
                         .form-body
                             form(action="/mail/send" method="POST")
                                 .row
                                     .col-md-6
-                                        label.form-requires-symbol(for="name") Navn
+                                        label.form-requires-symbol(for="name") Name
                                         input#name(type="text" name="name" required)
                                     .col-md-6
-                                        label.form-requires-symbol(for="email") E-post
+                                        label.form-requires-symbol(for="email") Email
                                         input#email(type="email" name="email" required)
                                 .row
                                     .col-md-6
-                                        label(for="mobile") Mobil
+                                        label(for="mobile") Cell phone
                                         input#mobile(type="number" name="mobile")
                                     .col-md-6
-                                        label(for="subject") Emne
+                                        label(for="subject") Subject
                                         input#subject(type="text" name="subject")
                                 .textarea-container
-                                    p.form-requires-symbol Beskjed
+                                    p.form-requires-symbol Message
                                     textarea#name(rows="7" name="message" required)
                                 input#submitbutton(type="submit" value="Send")
 

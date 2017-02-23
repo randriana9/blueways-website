@@ -7,7 +7,6 @@ nav(class=["navbar", "navbar-default", "navbar-fixed-top"])
                 span.icon-bar
                 span.icon-bar
             .language-bar
-                //a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") NO
                 a(href="#" class="dropdown-button") #{lang}
                 ul.dropdown-menu
                     li: a(href="/en") EN
@@ -15,7 +14,10 @@ nav(class=["navbar", "navbar-default", "navbar-fixed-top"])
                     li: a(href="/") NO
             .navbar-brand
                 span.brand-name
-                    a(href="/") BLUEWAYS
+                    if lang == "EN"
+                        a(href="/en") BLUEWAYS
+                    else
+                        a(href="/") BLUEWAYS
                 .brand-image-container
                     img.brand-logo-transparent(src="images/logo_white.png")
                     img.brand-logo-normal(src="images/logo.png")
@@ -27,11 +29,14 @@ nav(class=["navbar", "navbar-default", "navbar-fixed-top"])
             li: a(href="/en") HOME
             li: a(href="/en/about") ABOUT US
             li: a(href="/en/projects") OUR PROJECTS
+            li: a(href="/en/contact") CONTACT
+            li: a(href="/en/member") BECOME A MEMBER
+            li: a(class="/en/support-us" href="/support") YOUR SUPPORT
         else
             li: a(href="/") HJEM
             li: a(href="/about") OM OSS
             li: a(href="/projects") VÅRE PROSJEKTER
-        li: a(href="/contact") KONTAKT
-        //li: a(href="/news") NYHETER
-        li: a(href="/member") BLI MEDLEM
-        li: a(class="support-us" href="/support") GI STØTTE
+            li: a(href="/contact") KONTAKT
+            //li: a(href="/news") NYHETER
+            li: a(href="/member") BLI MEDLEM
+            li: a(class="support-us" href="/support") GI STØTTE
