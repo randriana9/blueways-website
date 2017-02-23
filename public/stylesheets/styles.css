@@ -8442,9 +8442,9 @@ footer {
     padding: 15px 30px; }
     .navbar-default .navbar-header .navbar-brand .brand-name {
       position: absolute;
-      top: 35px;
-      left: 105px;
-      font-size: 1.5em;
+      top: 34px;
+      left: 95px;
+      font-size: 5vw;
       -webkit-transition: all, 0.5s;
       -o-transition: all, 0.5s;
       transition: all, 0.5s; }
@@ -8497,7 +8497,7 @@ footer {
     .navbar-default.affix .navbar-header .navbar-brand .brand-name {
       top: 25px;
       left: 90px;
-      font-size: 1.3em; }
+      font-size: 5vw; }
       .navbar-default.transform-navbar .navbar-header .navbar-brand .brand-name a,
       .navbar-default.affix .navbar-header .navbar-brand .brand-name a {
         color: #193d6b;
@@ -8785,7 +8785,8 @@ footer {
       margin-bottom: 10px;
       object-fit: cover; }
     #vision .thumbnail span {
-      color: #595959; }
+      color: #595959;
+      text-align: justify; }
 
 #biImage-2 {
   display: none; }
@@ -8923,6 +8924,12 @@ footer {
     color: red; }
 
 @media (min-width: 768px) {
+  .navbar-default .navbar-header .navbar-brand .brand-name {
+    font-size: 1.5em;
+    left: 105px; }
+  .navbar-default.affix .navbar-header .navbar-brand .brand-name,
+  .navbar-default.transform-navbar .navbar-header .navbar-brand .brand-name {
+    font-size: 1.3em; }
   #second-section .section-B .image-overlay {
     font-size: 5vw;
     padding: 25% 10%; }

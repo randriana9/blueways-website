@@ -4,16 +4,23 @@ footer(class=['footer'])
             .col-md-3.footer-content
                 h4 BLUEWAYS
                 address
-                    p Steintrælia 16, 5238 RÅDAL NORWAY
                     if lang == "NO"
+                        p Steintrælia 16, 5238 RÅDAL NORGE
                         p E-post: 
                             a(href="mailto:post@blue-ways.org") post@blue-ways.org
                         p Telefon: 
                             a(href="tel:+4740784763") +47 407 84 763
-                    else
+                    else if lang == "FR"
+                        p Steintrælia 16, 5238 RÅDAL NORVÈGE
                         p Email: 
                             a(href="mailto:post@blue-ways.org") post@blue-ways.org
-                        p Telephone: 
+                        p Téléphone:
+                            a(href="tel:+4740784763") +47 407 84 763
+                    else
+                        p Steintrælia 16, 5238 RÅDAL NORWAY
+                        p Email: 
+                            a(href="mailto:post@blue-ways.org") post@blue-ways.org
+                        p Telephone:
                             a(href="tel:+4740784763") +47 407 84 763
                     p Org.nr: 917 279 586
             if lang == "EN"
@@ -39,17 +46,17 @@ footer(class=['footer'])
                 .col-md-3.footer-content
                     h4 PLAN DU SITE
                     ul
-                        li: a(href="/about") Sur nous
-                        li: a(href="/projects") Nos projets
-                        li: a(href="/projects#waterpump") Pompe à eau
-                        li: a(href="/projects#rice") Plantation de riz
-                        li: a(href="/projects#clean-water") EAU POTABLE
-                        li: a(href="/projects#waterpump") Pompe à eau
-                        li: a(href="/projects#identity") IDENTITÉ
-                        li: a(href="/contact") Contact
-                        li: a(href="/support") Nous soutenir
+                        li: a(href="/fr/about") L'organisation
+                        li: a(href="/fr/projects") Nos projets
+                        li: a(href="/fr/projects#waterpump") Pompe à eau
+                        li: a(href="/fr/projects#rice") Plantation de riz
+                        li: a(href="/fr/projects#clean-water") EAU POTABLE
+                        li: a(href="/fr/projects#waterpump") Pompe à eau
+                        li: a(href="/fr/projects#identity") IDENTITÉ
+                        li: a(href="/fr/contact") Contact
+                        li: a(href="/fr/support") Nous soutenir
                 .col-md-3.footer-content
-                    h4 Abonnés
+                    h4 Suivez-nous
                     p: a(href="https://www.facebook.com/bluewaysorg") Facebook
                 .col-md-3.footer-content
                     h4 &nbsp

@@ -1,3 +1,8 @@
+mixin brand-container
+    .brand-image-container
+        img.brand-logo-transparent(src="images/logo_white.png")
+        img.brand-logo-normal(src="images/logo.png")
+        
 nav(class=["navbar", "navbar-default", "navbar-fixed-top"])
     .container-fluid
         .navbar-header
@@ -8,21 +13,23 @@ nav(class=["navbar", "navbar-default", "navbar-fixed-top"])
                 span.icon-bar
             .language-bar
                 a(href="#" class="dropdown-button") #{lang}
+                    span.caret
                 ul.dropdown-menu
                     li: a(href="/en") EN
                     li: a(href="/fr") FR
                     li: a(href="/") NO
             .navbar-brand
                 span.brand-name
-                    if lang == "EN"
-                        a(href="/en") BLUEWAYS
-                    else if lang == "FR"
-                        a(href="/fr") BLUEWAYS
-                    else
+                    if lang == "NO"
                         a(href="/") BLUEWAYS
-                .brand-image-container
-                    img.brand-logo-transparent(src="images/logo_white.png")
-                    img.brand-logo-normal(src="images/logo.png")
+                    else
+                        a(href="/"+lang) BLUEWAYS
+                if lang == "NO"
+                    a(href="/")
+                        +brand-container
+                else
+                    a(href="/"+lang)
+                        +brand-container
                 
 
 .navbar-overlay
@@ -36,10 +43,10 @@ nav(class=["navbar", "navbar-default", "navbar-fixed-top"])
             li: a(href="/en/support") YOUR SUPPORT
         else if lang == "FR"
             li: a(href="/fr") ACCUEIL
-            li: a(href="/fr/about") SUR NOUS
+            li: a(href="/fr/about") L'ORGANISATION
             li: a(href="/fr/projects") NOS PROJETS
-            li: a(href="/fr/contact") CONTACT
-            li: a(href="/fr/member") DEVENEZ MEMBRE
+            li: a(href="/fr/contact") NOUS CONTACTER
+            li: a(href="/fr/member") DEVENIR MEMBRE
             li: a(href="/fr/support") FAIRE UN DON
         else
             li: a(href="/") HJEM

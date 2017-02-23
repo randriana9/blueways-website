@@ -10,12 +10,12 @@ prepend content
         .container
             .form-container
                 .form-container-header
-                    h1 CONTACT US
-                    p Please contact us if you would like to know more about us, our projects, or if you have any other inquiries.
+                    h1 NOUS CONTACTER
+                    p N'hésitez pas à nous contacter si vous souhaitez obtenir davantage d'information sur l'organisation, nos projets ou pour tout autre question.
                 .form-container-body
                     .form-layout
                         .form-header
-                            h2 CONTACT US
+                            h2 CONTACTEZ NOUS
                             hr
                         .form-body
                             form(action="/mail/send" method="POST")
@@ -24,19 +24,19 @@ prepend content
                                         label.form-requires-symbol(for="name") Nom
                                         input#name(type="text" name="name" required)
                                     .col-md-6
-                                        label.form-requires-symbol(for="email") Adresse mail
+                                        label.form-requires-symbol(for="email") E-mail
                                         input#email(type="email" name="email" required)
                                 .row
                                     .col-md-6
-                                        label(for="mobile") Telephone
+                                        label(for="mobile") Téléphone
                                         input#mobile(type="number" name="mobile")
                                     .col-md-6
-                                        label(for="subject") Sujet
+                                        label(for="subject") Objet
                                         input#subject(type="text" name="subject")
                                 .textarea-container
                                     p.form-requires-symbol Message
                                     textarea#name(rows="7" name="message" required)
-                                input#submitbutton(type="submit" value="Envouer")
+                                input#submitbutton(type="submit" value="Envoyer")
 
 
 

@@ -1,4 +1,12 @@
-@media (min-width: $screen-sm-min) { 
+@media (min-width: $screen-sm-min) {
+    .navbar-default .navbar-header .navbar-brand .brand-name {
+        font-size: 1.5em;
+        left: 105px;
+    }
+    .navbar-default.affix .navbar-header .navbar-brand .brand-name,
+    .navbar-default.transform-navbar .navbar-header .navbar-brand .brand-name {
+        font-size: 1.3em;
+    }
     #second-section .section-B .image-overlay {
         font-size: 5vw;
         padding: 25% 10%;   

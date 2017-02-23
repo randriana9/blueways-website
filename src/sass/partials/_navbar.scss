@@ -78,9 +78,9 @@
 
             .brand-name {
                 position: absolute;
-                top: 35px;
-                left: 105px;
-                font-size: 1.5em;
+                top: 34px;
+                left: 95px;
+                font-size: 5vw;
                 @include transition(all, $transition-duration);
 
                 a {
@@ -143,7 +143,7 @@
             .brand-name {
                 top: 25px;
                 left: 90px;
-                font-size: 1.3em;
+                font-size: 5vw;
 
                 a {
                     color: $primary-color;
