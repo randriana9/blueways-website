@@ -8,45 +8,31 @@ var bs = require('browser-sync').create();
 
     gulp.task('build', ['pug-compile', 'styles-to-dist', 'copy-vendors-to-dist', 'copy-images']);
 
-    gulp.task('pre-build', function() {
+
+    /* copy pug files to pre-build for some changes */
+    gulp.task('be-careful-pre-build', function() {
         /* top files */
          gulp.src('views/*.pug')
-        .pipe(pug({
-            pretty: true
-        }))
         .pipe(gulp.dest('pre-build'));
 
         /* includes files */
         gulp.src('views/includes/*.pug')
-        .pipe(pug({
-            pretty: true
-        }))
         .pipe(gulp.dest('pre-build'));
 
         /* english files */
         gulp.src('views/lang-en/*.pug')
-        .pipe(pug({
-            pretty: true
-        }))
         .pipe(gulp.dest('pre-build'));
 
         /* french files */
         gulp.src('views/lang-fr/*.pug')
-        .pipe(pug({
-            pretty: true
-        }))
         .pipe(gulp.dest('pre-build'));
 
         /* layouts files */
         gulp.src('views/layouts/*.pug')
-        .pipe(pug({
-            pretty: true
-        }))
         .pipe(gulp.dest('pre-build'));
     })
 
     gulp.task('pug-compile', function() {
-        /* top files */
          gulp.src('pre-build/*.pug')
         .pipe(pug({
             pretty: true
