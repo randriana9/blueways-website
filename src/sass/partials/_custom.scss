@@ -338,7 +338,7 @@ footer {
 
 #news {
     .news-container {
-        height: 500px;
+        height: 520px;
     }
     header {
         background-color: $tertiary-color;
@@ -370,6 +370,11 @@ footer {
                 color: #666666;
             }
         }
+    }
+    .youtube {
+        width: 350px;
+        height: 233px;
+        object-fit: cover;
     }
     .carousel-container {
         margin-top: 0;

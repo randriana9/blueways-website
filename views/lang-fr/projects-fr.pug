@@ -2,13 +2,11 @@ extends ../layouts/base.pug
 block variables
     - var lang = 'FR'
 prepend content
-    .video-header
-        video(playsinline autoplay muted loop)
-            source(src='../videos/waterpump.mp4', type='video/mp4')
-        p Pompe à eau
-        a(href='#waterpump') PLUS D'INFOS
+    header
+        .image-header
+            img(src="../images/kids-water.jpg")
     .intersection
-        h2 Voies hors de la pauvreté
+        h2 Un chemin pour sortir de la pauvreté
         blockquote
             | “Si tu donnes un poisson à un homme, il mangera un jour. 
             | Si tu lui apprends à pêcher, il mangera toujours” 
@@ -30,8 +28,8 @@ prepend content
                             
                         p.
                             En coopération avec des entreprises locales, Blueways compte développer des pompes à eau 
-                            d'énergie libre. Ces pompes permettront d'aider les agriculteurs à la distribution d’eau dans les zones sèches. C’est un type de pompe qui ne nécessite aucune autre
-                            source d'énergie que l'énergie cinétique de l'eau d'une rivière.
+                            d'énergie libre. Ces pompes permettront d'aider les agriculteurs à la distribution d’eau dans les zones sèches. Il s'agit d'un type de pompe qui ne nécessite
+                            que de l'énergie cinétique de l'eau d'une rivière.
             #rice.project-block
                 .row
                     .col-md-6
@@ -52,7 +50,7 @@ prepend content
             #clean-water.project-block
                 .media
                     .col-md-6
-                        img(src='../images/kids-water.jpg', alt='children playing with water' class=["reveal"])
+                        img(src='../images/water.jpg', alt='children playing with water' class=["reveal"])
                     .col-md-6
                         h3 EAU POTABLE
                         p.

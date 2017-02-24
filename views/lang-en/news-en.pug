@@ -1,10 +1,10 @@
-extends ./layouts/base.pug
+extends ../layouts/base.pug
 block variables
-    - var lang = 'NO'
+    - var lang = 'EN'
 prepend content
     #news
         header
-            h1 Nyheter
+            h1 News
         hr.headerhr-primary
         img(src=("../images/triangle-tertiary-darker.svg") class=["triangle", "center-block"])
         .container
@@ -20,13 +20,12 @@ prepend content
                                         .item
                                             img(src="../images/news/barnehjem"+val+".jpeg")
                         .caption
-                            h3 Tafita barnehjemmet
+                            h3 Tafita orphanage
                             i (Antananarivo des. 2016)
-                            p En Blueways medlem har arbeidet frivillig i Tafita
-                                |barnehjemmet, i Antananarivo desember 2016. Hun lærte
-                                |barna litt om norsk kultur og om hvordan livet er i Norge.
-                                |Barna fikk også lære norske leker og sanger.  På slutten av
-                                |hennes opphold delte hun klær og leker til barna, noe som de satt veldig stor pris på.
+                            p One member of Blueways worked as a volonteer at Tafita orphanage in Antananarivo desember 2016. 
+                                |She taught the children about the norwegian culture and about the life in Norway.
+                                |The children also got to learn some norwegian games and songs.
+                                |At the end for her stay she handed out some donated clothes and toys for the children, which they really appreciated.
                 .col-sm-6.col-md-4.news-container
                     .thumbnail
                         .carousel-container
@@ -38,9 +37,9 @@ prepend content
                                         .item
                                             img(src="../images/news/water"+val+".jpeg")
                         .caption
-                            h3 Vannpumpe - befaring
+                            h3 Water pump - Inspection
                             i (Tsironomandidy nov. 2016)
-                            p Blueways under befaring av pumpe installasjonsområde sammen med lokale myndigheter.
+                            p Blueways toghether with local authorities, inspected the area where the water pumps will be installed.
                 .col-sm-6.col-md-4.news-container
                     .thumbnail
                         .carousel-container
@@ -55,31 +54,29 @@ prepend content
                             h3 Marolaona
                             i (Tsironomandidy nov. 2016)
                             p
-                                |Blueways vil gjerne rette stor takk til alle som bidro ved å
-                                |kjøpe toalettpapir og donerte under aksjonen september 2016.
-                                |Med nye skolebenker og  -pulter har barna ved Marolaona
-                                |barneskole i dag sunne og komfortable skolehverdager.
+                                |Blueways would like to thank everyone who participated in purchasing 
+                                |sanitary paper and donating during the campaign in september 2016.
+                                |With the donations and proceeds, we were able to provide the children at Marolaona elementary school with new school benches.
                 .col-sm-6.col-md-4.news-container
                     .thumbnail
                         a(href="https://www.youtube.com/watch?v=fAAFNz7riGs")
                             img.youtube(src="images/news/youtube.png")
                         .caption
-                            h3 Vannpumpe - prototype
+                            h3 Water pump - Prototype
                             i (Bergen okt. 2016)
-                            p Vi har laget ferdig og testet vanndrevet vannpumpe prototypen
-                            |i uke 40. Testresultaten viste at pumpen kan pumpe
-                            |18liter/min vann (26.000liter/døgn) til 80 metershøyde.
-                            |Neste steget er å produsere 3stk identiske pumper lokalt på
-                            |Madagaskar. Pumpene skal deretter installeres i en pilotprosjekt landsby.
+                            p We have developed and tested the prototype of the water driven pump in week 40.
+                                |The test result showed that the pump could pump 18 liter of water per minute, (26.000liter/day), until 80 meters in altitude.
+                                |The next step is to put the pumps in production. We're going to produce 3 identical pumps in Madagascar.
+                                |The pumps are then going to be installed in a pilot village.
                 .col-sm-6.col-md-4.news-container
                     .thumbnail
                         img(src="images/news/dorull.jpeg")
                         .caption
-                            h3 Dugnad - Salg av doruller
+                            h3 Communal work - Sanitary paper sale
                             i (Bergen sep. 2016)
-                            p Vi hadde salgsdugnad av doruller og tørkeruller i uke 37.
-                                |Inntekten skal gå til anskaffelse av skolepulter og -benker til en skole på Madagaskar.
-                                |Vi retter en stor takk til de frivillige som har gjort en kjempe innsats.
+                            p We did a sanitary paper sale in week 37.
+                                |The proceeds will be donated to provide school benches for an elementary school in Madagascar.
+                                |We would like to thank the all volunteers who did a great job.
                 .col-sm-6.col-md-4.news-container
                     .thumbnail
                         .carousel-container
@@ -90,12 +87,10 @@ prepend content
                                     .item
                                         img(src="../images/news/pant2.jpeg")
                         .caption
-                            h3 Dugnad - Panting av flasker
+                            h3 Communal work - Bottle recycling
                             i (Bergen aug. 2016)
-                            p Blueways gjennomførte en dugnadsarbeid ved å samle og pante
-                                |tomme flasker uke 32.
-                                |Det var en svært vellykket dugnad. Stor takk til de frivillige for
-                                |deres stor lagånd  innsats og engasjement.
+                            p Members of Blueways worked on recycling plastic bottles in week 32. It was a successful communal work.
+                                |Thank to the volunteers for their good efforts and their big engagement.
                 .col-sm-6.col-md-4.news-container
                     .thumbnail
                         .carousel-container
@@ -107,10 +102,8 @@ prepend content
                                         .item
                                             img(src="../images/news/vask"+val+".jpeg")
                         .caption
-                            h3 Dugnad - Nedvask
+                            h3 Communal work - Kindergarten cleaning
                             i (Bergen jul. 2016)
-                            p Blueways gjennomførte en nedvask dugnadsarbeid i en
-                                |barnehage i Bergen 22. juli - 24 juli 2016.
-                                |Inntekten skal gå til  forberedlse av skolestart  for elever ved
-                                |en fattig barneskole på Madagaskar.
-                
+                            p Blueways did a communal work in cleaning a kindergarten in Bergen on 22. july - 24. july 2016.
+                                | The proceeds will be donated to prepare for the school start for an elementary school in Madagascar.
+

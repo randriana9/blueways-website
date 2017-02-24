@@ -1,7 +1,7 @@
 footer(class=['footer'])
     .container
         .row
-            .col-md-3.footer-content
+            .col-md-3.col-sm-6.footer-content
                 h4 BLUEWAYS
                 address
                     if lang == "NO"
@@ -24,59 +24,54 @@ footer(class=['footer'])
                             a(href="tel:+4740784763") +47 407 84 763
                     p Org.nr: 917 279 586
             if lang == "EN"
-                .col-md-3.footer-content
+                .col-md-3.col-sm-6.footer-content
                     h4 SITE MAP
                     ul
+                        li: a(href="/en") Home
                         li: a(href="/en/about") About us
-                        li: a(href="/en/projects") Out projects
-                        li: a(href="/en/projects") Water pump
-                        li: a(href="/en/projects#rice") Rice planting
-                        li: a(href="/en/projects#clean-water") Clean drinking water
-                        li: a(href="/en/projects#waterpump") Water pump
-                        li: a(href="/en/projects#identity") Identity
-                        li: a(href="/en/contact") Contact us
+                        li: a(href="/en/projects") Our projects
+                        li: a(href="/en/contact") Contact
+                        li: a(href="/en/news") News
+                        li: a(href="/en/member") Become a member
                         li: a(href="/en/support") Support us
-                .col-md-3.footer-content
+                .col-md-3.col-sm-6.footer-content
                     h4 Follow us
                     p: a(href="https://www.facebook.com/bluewaysorg") Facebook
-                .col-md-3.footer-content
+                .col-md-3.col-sm-6.footer-content
                     h4 &nbsp
                     p Designet by Raintech
             else if lang == "FR"
-                .col-md-3.footer-content
+                .col-md-3.col-sm-6.footer-content
                     h4 PLAN DU SITE
                     ul
+                        li: a(href="/fr") Accueil
                         li: a(href="/fr/about") L'organisation
                         li: a(href="/fr/projects") Nos projets
-                        li: a(href="/fr/projects#waterpump") Pompe à eau
-                        li: a(href="/fr/projects#rice") Plantation de riz
-                        li: a(href="/fr/projects#clean-water") EAU POTABLE
-                        li: a(href="/fr/projects#waterpump") Pompe à eau
-                        li: a(href="/fr/projects#identity") IDENTITÉ
-                        li: a(href="/fr/contact") Contact
-                        li: a(href="/fr/support") Nous soutenir
-                .col-md-3.footer-content
+                        li: a(href="/fr/contact") Nous contacter
+                        li: a(href="/fr/news") Actualité
+                        li: a(href="/fr/member") Devenir membre
+                        li: a(href="/fr/support") Faire un don
+                .col-md-3.col-sm-6.footer-content
                     h4 Suivez-nous
                     p: a(href="https://www.facebook.com/bluewaysorg") Facebook
-                .col-md-3.footer-content
+                .col-md-3.col-sm-6.footer-content
                     h4 &nbsp
                     p Agence web Raintech.
             else 
-                .col-md-3.footer-content
-                    h4 PLAN DU SITE
+                .col-md-3.col-sm-6.footer-content
+                    h4 SITEMAP
                     ul
+                        li: a(href="/") Hjem
                         li: a(href="/about") Om oss
                         li: a(href="/projects") Våre prosjekter
-                        li: a(href="/projects#waterpump") Vannpumpe
-                        li: a(href="/projects#rice") Risplanting
-                        li: a(href="/projects#clean-water") Rent drikkevann
-                        li: a(href="/projects#waterpump") Vannpumpe
-                        li: a(href="/projects#identity") Identitet
                         li: a(href="/contact") Kontakt
+                        li: a(href="/news") Nyheter
+                        li: a(href="/member") Bli medlem
                         li: a(href="/support") Støtt oss
-                .col-md-3.footer-content
+                .col-md-3.col-sm-6.footer-content
                     h4 Følg oss
                     p: a(href="https://www.facebook.com/bluewaysorg") Facebook
-                .col-md-3.footer-content
+                    p: a(href="https://www.youtube.com/watch?v=fAAFNz7riGs") Youtube
+                .col-md-3.col-sm-6.footer-content
                     h4 &nbsp
                     p Designet og utviklet av Raintech.

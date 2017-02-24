@@ -1,10 +1,10 @@
-extends ./layouts/base.pug
+extends ../layouts/base.pug
 block variables
-    - var lang = 'NO'
+    - var lang = 'FR'
 prepend content
     #news
         header
-            h1 Nyheter
+            h1 Actualité
         hr.headerhr-primary
         img(src=("../images/triangle-tertiary-darker.svg") class=["triangle", "center-block"])
         .container
@@ -20,13 +20,13 @@ prepend content
                                         .item
                                             img(src="../images/news/barnehjem"+val+".jpeg")
                         .caption
-                            h3 Tafita barnehjemmet
+                            h3 L'orphelinat de Tafita
                             i (Antananarivo des. 2016)
-                            p En Blueways medlem har arbeidet frivillig i Tafita
-                                |barnehjemmet, i Antananarivo desember 2016. Hun lærte
-                                |barna litt om norsk kultur og om hvordan livet er i Norge.
-                                |Barna fikk også lære norske leker og sanger.  På slutten av
-                                |hennes opphold delte hun klær og leker til barna, noe som de satt veldig stor pris på.
+                            p En décembre 2016, un membre de Blueways a travaillé volontairement à l'orphelinat de Tafita, 
+                                |à Antananarivo. Elle a présenté aux enfants la culture et le mode de vie norvégien. Ils ont 
+                                |également pu apprendre des chansons et des jeux norvégiens. À l'issu de sa mission, elle leur 
+                                |a remis des donations  récupérés, notamment des vêtements et des jouets. Les enfants de l'orphelinat 
+                                |ont été ravis.
                 .col-sm-6.col-md-4.news-container
                     .thumbnail
                         .carousel-container
@@ -38,9 +38,9 @@ prepend content
                                         .item
                                             img(src="../images/news/water"+val+".jpeg")
                         .caption
-                            h3 Vannpumpe - befaring
+                            h3 Le projet de pompe à eau - Contrôle
                             i (Tsironomandidy nov. 2016)
-                            p Blueways under befaring av pumpe installasjonsområde sammen med lokale myndigheter.
+                            p En coopération avec les autorités locales, Blueways a examiné la zone où sera installée la pompe à eau.
                 .col-sm-6.col-md-4.news-container
                     .thumbnail
                         .carousel-container
@@ -55,31 +55,33 @@ prepend content
                             h3 Marolaona
                             i (Tsironomandidy nov. 2016)
                             p
-                                |Blueways vil gjerne rette stor takk til alle som bidro ved å
-                                |kjøpe toalettpapir og donerte under aksjonen september 2016.
-                                |Med nye skolebenker og  -pulter har barna ved Marolaona
-                                |barneskole i dag sunne og komfortable skolehverdager.
+                                |Blueways souhaite remercier toutes les personnes qui ont participé de 
+                                |près ou de loin  à la vente de papier hygiénique et celles qui ont effectué 
+                                |des dons lors de l'opération de septembre 2016. Grâce aux fonds recueillis 
+                                |nous avons pu fournir de nouveaux bancs aux élèves de l'école primaire de 
+                                |Marolaona.
                 .col-sm-6.col-md-4.news-container
                     .thumbnail
                         a(href="https://www.youtube.com/watch?v=fAAFNz7riGs")
                             img.youtube(src="images/news/youtube.png")
                         .caption
-                            h3 Vannpumpe - prototype
+                            h3 Le projet de pompe à eau - Prototype
                             i (Bergen okt. 2016)
-                            p Vi har laget ferdig og testet vanndrevet vannpumpe prototypen
-                            |i uke 40. Testresultaten viste at pumpen kan pumpe
-                            |18liter/min vann (26.000liter/døgn) til 80 metershøyde.
-                            |Neste steget er å produsere 3stk identiske pumper lokalt på
-                            |Madagaskar. Pumpene skal deretter installeres i en pilotprosjekt landsby.
+                            p Nous avons développé et testé le prototype de la pompe à eau lors de la semaine
+                                |du 3 au 9 octobre. Les résultats observés ont traduit une capacité de transport
+                                |de 18 litres d'eau par minute (26 000 litres par jour) jusqu'à 80 mètres en
+                                |altitude. L'étape suivante est la production de ce type de pompe. Nous comptons
+                                |produire 3 pompes identiques à Madagascar.
+                                |Celles-ci seront installées dans une ville où sera mené le projet pilote.
                 .col-sm-6.col-md-4.news-container
                     .thumbnail
                         img(src="images/news/dorull.jpeg")
                         .caption
-                            h3 Dugnad - Salg av doruller
+                            h3 Succès de la vente de papier hygiénique
                             i (Bergen sep. 2016)
-                            p Vi hadde salgsdugnad av doruller og tørkeruller i uke 37.
-                                |Inntekten skal gå til anskaffelse av skolepulter og -benker til en skole på Madagaskar.
-                                |Vi retter en stor takk til de frivillige som har gjort en kjempe innsats.
+                            p Nous avons effectué une vente de papier hygiénique lors de la semaine du 12 au 18 septembre. 
+                                |Les fonds vont permettre de fournir des bancs à une école primaire de Madagascar. Nous souhaitons 
+                                |remercier tous les volontaires qui ont fait un travail remarquable.
                 .col-sm-6.col-md-4.news-container
                     .thumbnail
                         .carousel-container
@@ -90,12 +92,10 @@ prepend content
                                     .item
                                         img(src="../images/news/pant2.jpeg")
                         .caption
-                            h3 Dugnad - Panting av flasker
+                            h3 Succès de la consignations de bouteilles
                             i (Bergen aug. 2016)
-                            p Blueways gjennomførte en dugnadsarbeid ved å samle og pante
-                                |tomme flasker uke 32.
-                                |Det var en svært vellykket dugnad. Stor takk til de frivillige for
-                                |deres stor lagånd  innsats og engasjement.
+                            p Les membres de Blueways ont collecté des bouteilles consignées, lors de la semaine du 8 au 14 août, 
+                                |ce qui s'est avéré être un franc succès. Nous remercions tous les volontaires pour leur engagement et leurs efforts.
                 .col-sm-6.col-md-4.news-container
                     .thumbnail
                         .carousel-container
@@ -107,10 +107,8 @@ prepend content
                                         .item
                                             img(src="../images/news/vask"+val+".jpeg")
                         .caption
-                            h3 Dugnad - Nedvask
+                            h3 Succès du nettoyage d'une école maternelle
                             i (Bergen jul. 2016)
-                            p Blueways gjennomførte en nedvask dugnadsarbeid i en
-                                |barnehage i Bergen 22. juli - 24 juli 2016.
-                                |Inntekten skal gå til  forberedlse av skolestart  for elever ved
-                                |en fattig barneskole på Madagaskar.
-                
+                            p Blueways a effectué un travail remarquable en nettoyant une école maternelle de Bergen du 22 au 24 juillet 2016. 
+                                |Les fonds récoltés seront dédiés à la préparation de la rentrée scolaire d'une école maternelle à Madagascar.
+
