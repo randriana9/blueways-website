@@ -1,8 +1,15 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps');
+    pug = require('gulp-pug');
 var bs = require('browser-sync').create();
 
+
+    gulp.task('pug-compile', function() {
+        return gulp.src('views/**/*.pug')
+        .pipe(pug({}))
+         .pipe(gulp.dest('dist/views'));
+    })
 
     gulp.task('sass', function() {
         return gulp.src('./src/sass/*.scss')
