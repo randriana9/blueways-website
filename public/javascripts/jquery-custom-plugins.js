@@ -25,7 +25,8 @@
 
             /* changing the slideselector to avoid conflict with bootstrap's carousel */
             slideSelector: '.fullpage-slide',
-            responsiveWidth: '1200'
+            responsiveWidth: '1200',
+            responsiveHeight: '740',
         });
 
 

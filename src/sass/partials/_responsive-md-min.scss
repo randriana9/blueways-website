@@ -1,23 +1,22 @@
 @media (min-width: $screen-md-min) { 
     .section-header {
-        height: 10vh;
-        width: 100%;
+        height: 150px;
+        width: 80%;
         h2 {
-            font-size: 3em;
+            font-size: 2.7em;
         }
     }
     .section-body {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
     .carousel-container {
-        margin-top: 20vh;
+        margin-top: 200px;
     }
 
     #third-section .section-content {
-        height: 60vh;
+        height: 700px;
         img {
-            top: 5vh;
-            left: 25%;
+            top: 50px;
         }
     }
 

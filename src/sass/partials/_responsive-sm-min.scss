@@ -7,36 +7,45 @@
     .navbar-default.transform-navbar .navbar-header .navbar-brand .brand-name {
         font-size: 1.3em;
     }
+
+    #hero-section {
+        font-size: 3.5em;
+    }
+
+    #second-section {
+        .section-A, .section-B {
+            height: 500px;
+        }
+    }
     #second-section .section-B .image-overlay {
-        font-size: 5vw;
-        padding: 25% 10%;   
+        padding: 25% 10%;
+        font-size: 2.5em;
     }
 
     #second-section .section-A .image-overlay {
-        font-size: 4.5vw;
-        padding: 10%;
-    }
+        padding: 20% 10%;
 
-    #third-section .section-content {
-        height: 70vh;
-
-        img {
-            top: 5vh;
-            left: 25%;
+        .like-icon {
+            height: 110px;
+            margin-bottom: 35px;
         }
     }
 
+    #third-section .section-content {
+        height: 700px;
+    }
+
     .section-header {
-        height: 15vh;
+        height: 140px;
         width: 60vw;
         margin: 0 auto;
         h2 {
-            font-size: 5vw;
+            font-size: 3em;
         }
     }
 
     .section-body {
-        font-size: 3vw;
+        font-size: 1.8em;
         padding: 30px 50px; 
         text-align: justify;
     }

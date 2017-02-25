@@ -9,7 +9,12 @@
         }
         .section-A .image-overlay {
             padding-top: 25vh;
-            font-size: 2.6em;
+            font-size: 2.5em;
+
+            .like-icon {
+                height: 150px;
+                margin-bottom: 50px;
+            }
         }
         .section-B .image-overlay {
             padding-top: 40vh;
@@ -18,7 +23,6 @@
     }
 
      .section-header {
-        height: 4vh;
         width: 80%;
         margin: 20px auto;
     }
@@ -28,8 +32,12 @@
         padding: 10px;
     }
 
-    #third-section .section-content img {
-        top: 0;
+    #third-section .section-content {
+        height: 750px;
+        img {
+            top: 50px;
+        }
+
     }
 
     #about {
