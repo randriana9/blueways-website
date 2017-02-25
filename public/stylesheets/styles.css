@@ -8246,7 +8246,7 @@ body {
     font-size: 5vw; }
 
 .section-body {
-  text-align: center;
+  text-align: justify;
   font-size: 4vw;
   line-height: 1.9em;
   z-index: 501;
@@ -8392,7 +8392,7 @@ footer {
 
 #news header {
   background-color: #c7e7f0;
-  height: 45vh;
+  height: 350px;
   width: 100%; }
   #news header h1 {
     text-align: center;
@@ -8778,7 +8778,7 @@ footer {
     margin-left: 55px;
     filter: sepia(70%); }
   #about .section-content {
-    height: 180vh; }
+    height: 120vw; }
 
 .image-header {
   height: 70vh;
@@ -8798,27 +8798,28 @@ footer {
     margin: 0; }
   #corevalues h2 {
     padding: 2% 0;
-    color: #0e233e; }
+    color: #0e233e;
+    font-size: 5vw; }
   #corevalues p {
     padding-bottom: 2%;
-    font-size: 8vw;
+    font-size: 4vw;
     color: #c7e7f0; }
 
 #vision {
   background-color: #83c7c9;
   text-align: center; }
   #vision h2 {
-    font-size: 10vw;
+    font-size: 5vw;
     color: #193d6b;
     display: inline-block;
     margin-top: 60px;
-    border-bottom: 3px solid #193d6b;
-    padding: 0 15px 15px; }
+    border-bottom: 2px solid #0e233e;
+    padding: 0 15px 10px; }
   #vision p {
-    margin: 20px 0 80px;
-    font-size: 7vw;
+    margin: 20px 30px 80px;
+    font-size: 4vw;
     line-height: 1.8em;
-    text-align: center; }
+    text-align: justify; }
   #vision .thumbnail {
     position: relative;
     background-color: #83c7c9;
@@ -9004,20 +9005,18 @@ footer {
     font-size: 1.8em;
     padding: 30px 50px;
     text-align: justify; }
-  #about {
-    height: 100vh; }
-    #about .section-content {
-      height: 60vh; }
+  #about .section-content {
+    height: 700px; }
   #corevalues h2 {
-    font-size: 5vw;
+    font-size: 3em;
     padding: 3% 0; }
   #corevalues p {
-    font-size: 4vw; }
+    font-size: 2.3em; }
   #vision h2 {
     font-size: 5vw;
     padding: 8px; }
   #vision p {
-    font-size: 3vw;
+    font-size: 1.8em;
     margin: 20px 30px 80px; }
   .intersection h2 {
     font-size: 5vw; }
@@ -9057,14 +9056,12 @@ footer {
     height: 700px; }
     #third-section .section-content img {
       top: 50px; }
-  #about {
-    height: 60vh; }
   #misc-projects {
     padding: 5vh 0; }
   #vision h2 {
-    font-size: 3em; }
-  #vision p {
-    font-size: 1.5em; }
+    font-size: 2.7em; }
+  #corevalues p {
+    font-size: 2.6em; }
   .intersection h2 {
     font-size: 2em; }
   .intersection blockquote {
@@ -9114,10 +9111,11 @@ footer {
     height: 750px; }
     #third-section .section-content img {
       top: 50px; }
-  #about {
-    height: 100vh; }
-    #about .section-header {
-      height: 20vh; }
+  #corevalues h2 {
+    font-size: 3.5em;
+    padding: 3% 0; }
+  #corevalues p {
+    font-size: 2.8em; }
   #contact-body .form-container .form-container-body {
     max-width: 750px; }
   #supportpage .col-md-6:first-child {

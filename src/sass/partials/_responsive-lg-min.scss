@@ -40,12 +40,16 @@
 
     }
 
-    #about {
-        .section-header {
-            height: 20vh;
+    #corevalues {
+        h2 {
+            font-size: 3.5em;
+            padding: 3% 0;
         }
-        height: 100vh;
+        p {
+            font-size: 2.8em;
+        }
     }
+
     #contact-body .form-container .form-container-body {
         max-width: 750px; 
     }

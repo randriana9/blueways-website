@@ -130,7 +130,7 @@ body {
 }
 
 .section-body {
-    text-align: center;
+    text-align: justify;
     font-size: 4vw;
     line-height: 1.9em;
     z-index: 501;
@@ -346,7 +346,7 @@ footer {
     }
     header {
         background-color: $tertiary-color;
-        height: 45vh;
+        height: 350px;
         width: 100%;
 
         h1 {
