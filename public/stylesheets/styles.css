@@ -8383,9 +8383,12 @@ footer {
     #supportpage .section-body p {
       font-size: 0.8em; }
   #supportpage .partner-logo {
-    max-width: 100%;
+    max-width: 200px;
+    max-height: 80px;
     margin: 40px auto;
     display: block; }
+    #supportpage .partner-logo.no-margin {
+      margin: 0 auto; }
 
 #news .news-container {
   height: 520px; }

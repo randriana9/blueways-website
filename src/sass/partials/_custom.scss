@@ -334,9 +334,14 @@ footer {
     }
 
     .partner-logo {
-        max-width: 100%;
+        max-width: 200px;
+        max-height: 80px;
         margin: 40px auto;
         display: block;
+
+        &.no-margin {
+            margin: 0 auto;
+        }
     }   
 }
 
